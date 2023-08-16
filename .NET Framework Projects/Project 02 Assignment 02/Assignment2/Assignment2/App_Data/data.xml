@@ -1,0 +1,61 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<SupportersList>
+  <Supporter>
+    <Name>John</Name>
+    <Lat>-33</Lat>
+    <Long>144</Long>
+    <typeSupport>Volunteer</typeSupport>
+    <supportLevel>Part Time</supportLevel>
+    <image>1.jpg</image>
+  </Supporter>
+  <Supporter>
+    <Name>Amy</Name>
+    <Lat>-36</Lat>
+    <Long>146</Long>
+    <typeSupport>Volunteer</typeSupport>
+    <supportLevel>Part Time</supportLevel>
+    <image>2.jpg</image>
+  </Supporter>
+  <Supporter>
+    <Name>Will</Name>
+    <Lat>-39</Lat>
+    <Long>149</Long>
+    <typeSupport>Caretaker</typeSupport>
+    <supportLevel>Full Time</supportLevel>
+    <image>3.jpg</image>
+  </Supporter>
+  <Supporter>
+    <Name>
+      <Lat>
+        <Long>
+          <typeSupport>
+            <supportLevel>
+              <image></image>
+            </supportLevel>
+          </typeSupport>
+        </Long>
+      </Lat>
+    </Name>
+  </Supporter>
+	
+  <Supporter>
+    <Name>Test
+	<Lat>-
+	26.611187829277863
+	<Long>
+		146.17888105535508
+		<typeSupport>
+			Caretaker
+			<supportLevel>
+				2 hours
+				<image>
+					Screenshot (143).png
+				</image>
+      </supportLevel>
+      </typeSupport>
+      </Long>
+      </Lat>
+      </Name>
+  </Supporter>
+
+</SupportersList>

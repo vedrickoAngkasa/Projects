@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WIL Opportunities List</title>
+	<link rel="stylesheet" href="./css/bootstrap.min.css">
+	<link rel="stylesheet" href="./css/index.css">
+	<link rel="stylesheet" href="./css/MOODLEJOB_CSS.css">
+	<script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="./js/index.js"></script>
+    <script src="./js/form.js"></script>
+</head>
+<body class="p-0 m-0">
+
+    <!-- NAVIGATION BAR -->
+    <div class="logo-container">
+        <a href ="index.html"><img src="./ArtAssets/MurdochUni_Logo.png" width="170" height="50"> </a>
+        
+        
+        <a href ="index.html"><img src="./ArtAssets/MoodleJob_Logo_V2.png" width="170" height="50"> </a>
+        </div>
+        
+          
+        
+        
+        <div class="topnav">
+           
+          
+        
+          <div class="dropdown">
+            <button class="droplogin" >Logins
+              <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-login">
+              <a href="Student_Login.html">Current Student</a>
+              <a href="MOODLEJOB_Employer_Login.html">Employers </a>
+            </div>
+            </div> 
+         
+        
+          <!-- <div class="dropdown">
+            <button class="dropbtn" >Contact Us/Help
+              <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+              <a href="webpage_Contactus_help_assignment.html">Help</a>
+          <a href="webpage_Contactus_help_assignment.html">About Us</a>
+              <a href="#">Testimonials </a>
+            </div>
+            </div>  -->
+        
+             
+          <a href="./ContactUs.html">Contact Us/Help</a>
+        
+        
+        
+        
+              <div class="dropdown">
+                <button class="dropabout" >Explore
+                  <i class="fa fa-caret-down"></i>
+                </button>
+                <div class="dropdown-about">
+                  <a href="About_Us_WIL.html">About Us</a>
+                  <a href="./Testimonial.html">Our Testimonials</a>
+                </div>
+                </div> 
+        
+          <!-- <a href="webpage_Contactus_help_assignment.html">About Us</a> --> 
+          <a href="./WIL_Grid.html">Jobs</a>
+        
+        
+          <a href="javascript:void(0);" class="icon" onclick="mobilenav()">
+            <i class="fa fa-bars"></i>
+          </a>
+          
+        </div>
+        
+        <div class="mtopnav">
+          
+          <div id="myLinks">
+          <a href="MOODLEJOB_Employer_Login.html">Employers Login</a>
+          
+          <div class="dropdown">
+          <!-- <button class="dropbtn" onclick="myFunction()">Categories
+            <i class="fa fa-caret-down"></i>
+          </button>
+          <div class="dropdown-content" id="myDropdown">
+            <a href="#">Electronics</a>
+            <a href="#">Laptop/Mobile</a>
+            <a href="#">Women's Fashion</a>
+            <a href="#">Men's Fashion</a>
+            <a href="#">Entertainments</a>
+          </div> -->
+          </div> 
+          <a href="webpage_login_signup_ assignment.html">Current Student Login</a>
+          <a href="webpage_Contactus_help_assignment.html">Contact Us/Help</a>
+          <a href="About_Us_WIL.html">About Us</a>
+          <a href="./Testimonial.html">Our Testimonials</a>
+          </div>
+        </div>
+
+
+
+
+    <!-- Main Content Section -->
+    <div class="container-fluid border border-dark mt-2 p-0">
+        <!-- Background WIL Picture with text Section -->
+        <section id="section-hero" class="text-center text-white d-flex justify-content-start align-items-center">
+			<div class="container-fluid ms-5 d-flex flex-column justify-content-start align-items-start text-left">
+                    <h2 class="display-4 text-start" id="titleBackground">WIL Opportunities</h2>
+                    <p id="titleBackgroundParagraph" class="w-25 p-2 mt-3 text-start d-flex align-items-start justify-content-start">Explore your job possibilities as a Murdoch student.</p>
+			</div> 
+           
+            <div class="container-fluid position-absolute bottom-0 end-0 d-flex justify-content-end align-items-end" id="buttonSearchHolder">
+                <div class="search-container">
+                    <form action="/search" method="get">
+                      <input class="search expandright" id="searchright" type="search" name="q" placeholder="Search">
+                      <label class="button searchbutton" for="searchright"><span class="mglass">&#9906;</span></label>
+                    </form>
+                  </div>
+            </div>
+		</section>
+
+        <!-- Color Color Red Section -->
+        <div class="container-fluid" id="colorBackground">
+            <p class="text-danger">..</p>
+        </div>
+
+
+        <!-- Breadcrumb Section-->
+        <div class="container mt-4 px-5">
+            <nav style="--bs-breadcrumb-divider: '>';" aria-label="Breadcrumb" class="pt-2">
+                <ol class="breadcrumb">
+                  <li class="breadcrumb-item " id="breadcrumb-item1"><a href="#" class="text-black text-decoration-none">Home</a></li>
+                  <li class="breadcrumb-item " id="breadcrumb-item2"><a href="WIL_Grid.html" class="text-black text-decoration-none">WIL Opportunities</a></li>
+                  <li class="breadcrumb-item " id="breadcrumb-item3"><a href="WIL_OL.html" class="text-danger text-decoration-none">Job</a></li>
+                </ol>
+              </nav>
+        </div>  
+
+        <!-- Job Section Content  -->
+        <div class="container px-5">
+
+            <!-- Company Information -->
+            <div class="container mt-2 p-4 d-flex flex-column flex-lg-row">
+
+                <!-- Company Location Title  -->
+                <div class="card w-100 d-flex flex-lg-row flex-column border border-0">
+                    <img src="./ArtAssets/Rectangle 62.jpg" alt="Card image in the top" class="card-img-top w-100 h-100">
+                    <div class="card-body">
+
+                        <!-- Card Title and Save Icon  -->
+                        <div class="container ms-lg-5 ms-0 d-flex flex-row justify-content-between" id="companyJobTitle">
+                            <span class="display-6">Data Engineer (Power BI / SQL)</span>
+                            <img src="./ArtAssets/Icons/Save_Icon.png" class="ms-5 ps-2" id="saveIconListJob">
+                        </div>
+
+                        <!-- Company Location -->
+                        <div  class="container ms-lg-5 mt-4 mt-lg-0 ms-0" id="companyLocationJob">
+                            <span>OPTIMUM SOLUTIONS (SINGAPORE) PTE LTD
+                                Singapore</span>
+                        </div>  
+
+                        <!-- Icons for Jobs -->
+                        <div class="container-fluid mt-4 w-100 d-flex flex-row justify-content-start align-items-start">
+                        
+                                <figure class="figure d-flex flex-row justify-content-center align-items-center">
+                                    <img src="./ArtAssets/Icons/Post_Timing.png"  id="timePostingJob">
+                                    <figcaption>&nbsp; 1 Month Ago</figcaption>
+                                </figure>
+                                <figure class="figure d-flex flex-row justify-content-center align-items-center ">
+                                    <img src="./ArtAssets/Icons/Job_Type.png"  id="timePostingJob">
+                                    <figcaption>&nbsp; Full Time</figcaption>
+                                </figure>
+                                <figure class="figure d-flex flex-row justify-content-center align-items-center ">
+                                    <img src="./ArtAssets/Icons/Money_Icon.png"  id="timePostingJob">
+                                    <figcaption> 600-1K / Month</figcaption>
+                                </figure>
+                                <figure class="figure d-flex flex-row justify-content-center align-items-center ">
+                                    <img src="./ArtAssets/Icons/Globe_Icon.png"  id="timePostingJob">
+                                    <figcaption> Remote</figcaption>
+                                </figure>
+                        
+                          </div>
+                    </div>
+                  </div>
+
+                  
+
+            </div>
+                     <!-- Description of Jobs -->
+            <div class="container mt-5">
+                            The Government Technology Agency (GovTech) aims to transform the delivery of Government digital services by taking an "outside-in" view, putting citizens and businesses at the heart of everything we do.
+                            <br/>
+                            <br/>
+                            Roles and Responsibilities:
+                            <nav>
+                                <ul>                           
+                                    <li class="my-1"> Collaborate with business and Technology users to analyse user requirements and contribute to defining data models. Deliver Visualization programs</li>                           
+                                    <li class="my-1"> Deliver world class dashboard and analytics solutions using company standard datalake in snowflake and appropriate tools – to start with MS PowerBI and progressively to either python based or Java based UI</li>                        
+                                    <li class="my-1">  Contribute and Use best practices in PowerBI and other tools</li>                          
+                                    <li class="my-1">  Work with SQL to extract, transform and load data in snowflake and use powerbi visualization tools · Create functional and technical specifications</li>
+                                </ul>
+                            </nav>
+                           
+                            <br/>
+ 
+                            Provide thought leadership Requirements:
+                            <li class="my-1">Progressive work experience in the field of Business Intelligence, information management, data engineering</li>
+                            <li class="my-1">Demonstrable experience and proficiency in PowerBI</li>
+                            <li class="my-1">Data modelling skills</li>
+                            <li class="my-1">Proficiency in SQL – for ETL tools</li>
+                            <li class="my-1">    
+                                Strong data storytelling experience</li>
+                            <li class="my-1">          
+                                Graduate in STEM. Post graduation preferred</li>        
+            </div>
+
+             <!-- Buttons for apply and report -->
+             <div class="container mt-5 d-flex w-75 flex-column flex-lg-row justify-content-around align-items-center mb-5 pb-5">
+
+                <button type="button" class="btn btn-danger" data-bs-toggle="modal" id="reportButton" data-bs-target="#exampleModalReport">
+                    ! REPORT THIS LISTING
+                </button>
+
+                    <!-- Modal -->
+                    <div class="modal fade" id="exampleModalReport" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                        <div class="modal-header">
+                            <h1 class="modal-title fs-5" id="exampleModalLabel">Report</h1>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <form id="reportProblemForm">
+                                <label for="textareaReport" class="form-label ms-1">Username: </label>
+                                <input type="text" class="form-control mb-3" id="userReport" rows="5" placeholder="Enter your name." required>
+                                <label for="textareaReport" class="form-label ms-1">What would you like to report: </label>
+                                <textarea class="form-control mb-3" id="textareaReport" rows="5" placeholder="Write your message here." required></textarea>
+                                <div class="alert alert-success d-none" id="validReportMsg" role="alert">Success!!! Data has been sent to be review</div>
+                                <div class="alert alert-danger d-none" id="invalidReportMsg" role="alert">Please filled in the input box</div>
+                            </form>
+                            
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                            <button type="button" class="btn btn-primary" id="reportJob">Submit</button>
+                        </div>
+                        </div>
+                    </div>
+                    </div>
+
+
+                <button type="button" class="btn text-white mt-lg-0 mt-4" data-bs-toggle="modal" id="applyButton" data-bs-target="#exampleModalApplyNow">
+                    APPLY NOW
+                </button>
+
+                    <!-- Modal -->
+                    <div class="modal fade" id="exampleModalApplyNow" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                        <div class="modal-header">
+                            <h1 class="modal-title fs-5" id="exampleModalLabel">Apply Job</h1>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+
+                            <form method="post" enctype="multipart/form-data" id="applyJobForm">
+                                <div class="mb-3">
+                                    <label for="inputStudentNameApply" class="my-2">Enter Student Name: </label>
+                                    <input type="text" class="form-control" id="inputStudentNameApply" required>
+                                </div>
+                      
+    
+                                <label for="inputResumeText" class="form-label ms-1">Choose your Resume: </label>
+                                <div class="form-file mb-3">
+                                    <input type="file" class="form-file-input" id="inputResume" required>
+                                    <label class="form-file-label" for="inputResume"> </label>
+                                </div>
+                                <div class="alert alert-success d-none" id="validApplyMsg" role="alert">Success!!! Data has been sent to be review</div>
+                                <div class="alert alert-danger d-none" id="invalidApplyMsg" role="alert">Failed!!! Please enter valid credentials</div>
+                            
+                            </form>
+     
+                        
+                           
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                            <button type="button" class="btn btn-primary" id="applyJobSubmitBtn">Submit</button>
+                        </div>
+                        </div>
+                    </div>
+                    </div>
+             </div>
+           
+        </div>
+
+
+    </div>
+
+</body>
+</html>

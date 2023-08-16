@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Login</title>
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+	<link rel="stylesheet" href="./css/index.css">
+	<link rel="stylesheet" href="./css/MOODLEJOB_CSS.css">
+	<script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="./js/index.js"></script>
+    <script src="./js/form.js"></script>
+</head>
+
+<body class="p-0 m-0 bg-dark">
+  <!-- NAVIGATION BAR -->
+  <div class="logo-container">
+    <a href ="./index.html"><img src="./ArtAssets/MurdochUni_Logo.png" width="170" height="50"> </a>
+    
+    
+    <a href ="./index.html"><img src="./ArtAssets/MoodleJob_Logo_V2.png" width="170" height="50"> </a>
+    </div>
+    
+    <div class="topnav">
+    
+        <a href="./MOODLEJOB_Employer_Login.html">Employers Login</a>
+          
+        <a href="./ContactUs.html">Contact Us/Help</a>
+
+      
+       
+    </div><br><br>
+    <!-- Background with login section  Larger Screen-->
+    <div class="d-sm-block d-none card vw-100 vh-100 rounded-0 bg-dark">
+        <img src="./ArtAssets/Murdoch_University.jpg" alt="Card image as an overlay" class="card-img login-background">
+        <div class="card-img-overlay d-flex align-items-center justify-content-center">
+            
+            <div class="container width-40 h-75 white-bg d-flex flex-column align-items-start justify-content-start  px-3 mt-5 pt-5">
+                
+                <div class="container d-flex flex-row justify-content-center align-items-center">
+                    <img src="./ArtAssets/MurdochUni_Logo.png" class="w-50">
+                </div>
+             
+                <!-- Form for Student Submit Information -->
+                <div class="container mt-4">
+                    <form id="studentForm">
+                        <fieldset style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">
+                          <div class="mb-3">
+                            <label for="inputEmail" class="form-label">Student ID: </label>
+                            <br/>
+                            <span class="text-danger d-none" id="invalidInputID">Incorrect Credentials</span>
+                            <input type="text" class="form-control mt-2" placeholder="Student ID..." id="inputID" value="johnDoe@gmail.com">
+                          </div>
+                          <div class="mb-3">
+                            <label for="inputPassword" class="form-label">Password: </label>
+                            <br/>
+                            <span class="text-danger d-none" id="invalidInputPassword">Incorrect Credentials</span>
+                            <input type="password" class="form-control mt-2" placeholder="Password..." id="inputPassword" value="12345">
+                          </div>
+                          <div class="container mb-3 d-flex flex-row justify-content-center align-items-center mt-5">
+                            <button type="submit" class="btn btn-primary" id="submitFormStudent1">Sign In</button>
+                          </div>
+                          <div class="d-none container d-flex flex-row justify-content-center  align-items-center text-center" id="failedLogin">
+                            <div class="alert alert-danger" role="alert">
+                              ACCOUNT DOESN'T EXISTS <br/>PLEASE CHECK CREDENTIALLS !!!!
+                            </div>
+                          </div>
+                          
+                        </fieldset>
+                      </form>
+                </div>
+              
+
+
+
+            </div>
+
+        </div>
+      </div>
+
+
+    <!-- Background with login section Smaller Screen-->
+
+      <div class="d-sm-none d-block card vw-100 vh-100 rounded-0 bg-dark">
+        <img src="./ArtAssets/Murdoch_University.jpg" alt="Card image as an overlay" class="card-img login-background vh-100">
+        <div class="card-img-overlay d-flex align-items-center justify-content-center">
+            
+            <div class="container w-100 h-75 white-bg d-flex flex-column align-items-start justify-content-start  px-3 mt-5 pt-5">
+                
+                <div class="container d-flex flex-row justify-content-center align-items-center">
+                    <img src="./ArtAssets/MurdochUni_Logo.png" class="w-50">
+                </div>
+             
+                <!-- Form for Student Submit Information -->
+                <div class="container mt-4">
+                  <form id="studentForm2">
+                    <fieldset>
+                      <div class="mb-3">
+                        <label for="inputEmail" class="form-label">Student ID: </label>
+                        <br/>
+                        <span class="text-danger d-none" id="invalidInputID2">Incorrect Credentials</span>
+                        <input type="text" class="form-control mt-2" placeholder="Student ID..." id="inputID2" value="">
+                      </div>
+                      <div class="mb-3">
+                        <label for="inputPassword" class="form-label">Password: </label>
+                        <br/>
+                        <span class="text-danger d-none" id="invalidInputPassword2">Incorrect Credentials</span>
+                        <input type="password" class="form-control mt-2" placeholder="Password..." id="inputPassword2" value="">
+                      </div>
+                      <div class="container mb-3 d-flex flex-row justify-content-center align-items-center mt-5">
+                        <button type="submit" class="btn btn-primary" id="submitFormStudent2">Sign In</button>
+                      </div>
+                      <div class="d-none container d-flex flex-row justify-content-center align-items-center text-center">
+                        <div class="alert alert-danger" role="alert">
+                          ACCOUNT DOESN'T EXISTS <br/>PLEASE CHECK CREDENTIALLS !!!!
+                        </div>
+                      </div>
+                      
+                    </fieldset>
+                  </form>
+                </div>
+              
+
+
+
+            </div>
+
+        </div>
+      </div>
+</body>
+</html>

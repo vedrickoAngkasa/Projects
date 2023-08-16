@@ -1,0 +1,28 @@
+HOW TO PUSH TO GITHUB into the main branch:
+
+1. Check if your directory is correct or not, then if correct run git bash
+2. type git init
+3. type git add .
+4. type git commit -m "Your Message"
+5. git remote add origin " your repository link " (change the https:// to ://)
+6. check if it is in the main branch or the master branch, if it is in the master branch change it by using the following command:
+type: git branch -M main
+7. type: git pull origin main --allow-unrelated
+8. git push -u origin main
+
+
+HOW TO PUSH TO GITHUB into the master branch:
+
+1. Check if your directory is correct or not, then if correct run git bash
+2. type git init
+3. type git add .
+4. type git commit -m "Your Message"
+5. git remote add origin " your repository link " (change the https:// to ://)
+6. git push -u origin master
+
+
+HOW TO MAKE FOLDER IN GITHUB: 
+
+1. Go to Github and add new file
+2. In your local machine add a txt file then upload it
+
