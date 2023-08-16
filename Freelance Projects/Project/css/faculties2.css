@@ -1,0 +1,181 @@
+main{
+    background-color: white;
+}
+
+.pageThreeContent{
+        margin: 5% 0%;
+        display: flex;
+        flex-direction: column;
+        background-color: white;
+}
+
+.facultiesDesc{
+    padding: 0.5% 5%;
+    margin: 2% 3%;
+}
+
+.facultiesDetails{
+    margin: 1%;
+}
+
+.facultiesDetails h1,
+.facultiesDesc h1{
+    font-family: MontserratBold;
+    letter-spacing: 1.5px;
+}
+
+
+.facultiesDesc aside{
+    margin: 0.25% 1% 1% 0%;
+    width: 25%;
+    padding:0.25% 1% 1% 0%;
+}
+
+.facultiesDesc p{
+    font-family: Arial, Helvetica, sans-serif;
+    letter-spacing: 1px;
+    line-height: 125%;
+}
+
+.underline{
+    text-align: center;
+    padding: 0.5% 5%;
+    margin: 2% ;
+}
+
+.backgroundPic img{
+    width: 100%;
+}
+
+.facultiesDetails h1{
+    padding: 0.5% 5%;
+    margin: 0% 2%;
+}
+
+.facultiesDetails aside{
+    padding: 0% 5%;
+    margin: 0% 2% ;
+}
+
+.facultiesDetails p{
+    padding: 0% 5%;
+    margin: 2% 2% ;
+    font-family: Arial, Helvetica, sans-serif;
+    letter-spacing: 1px;
+    line-height: 125%;
+}
+
+.facultiesDetails .underline{
+    letter-spacing: 0px;
+}
+
+.facultiesDivision{
+    padding: 0.5% 2%;
+    margin: 1% 5%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+
+}
+
+.titleFaculties li{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+#title1,
+#title2,
+#title3{
+    /*border: 2px solid red;*/
+    margin: 1% 1% 0% 1%;
+    padding: 1% 1% 0% 1%;
+    font-family: MontserratBold;
+    letter-spacing: 1px;
+    line-height: 125%;
+    width: 100px;
+    font-size: 27px;
+    text-align: left;
+}
+
+#faculty1,
+#faculty2,
+#faculty3{
+    letter-spacing: 1px;
+    line-height: 125%;
+    margin: 1% 1% 0% 10%;
+    padding: 1% 1% 0% 10%;
+    font-family: MontserratBold;
+    text-align: left;
+    font-size: 27px;
+    width:  500px;
+   
+}
+
+.titleUnderline{
+    text-align: center;
+    margin: 10% 2%;
+    line-height: 200%;
+    font-family: MontserratBold;
+}
+
+.degreeOption{
+    margin: 3% 3% 3% 0%;
+    padding: 2% 2% 2% 1%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+
+.degreeOption #degreeName a{
+    width: 500px;
+    text-decoration: none;
+    color: rgb(153, 149, 149);
+    font-family: MontserratBold;
+    letter-spacing: 1px;
+    line-height: 125%;
+    margin: 3% 5.5%;
+    
+}
+
+.degreeOption #degreeName a:hover{
+    color: black;
+    transition: all 0.75s;
+}
+
+.degreeOption #degreeTerm li{
+    text-decoration: none;
+    margin: 4% 0%;
+    padding: 5% 0%;
+    width: 200px;
+    text-align: center;
+    color: rgb(0, 0, 0);
+    font-family: MontserratBold;
+    letter-spacing: 1px;
+    line-height: 125%;
+}
+
+/*Styling PopUp*/
+
+
+
+
+
+#overlay{
+    transition: 200ms ease-in-out;
+    position: fixed;
+    opacity: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.5);
+    pointer-events: none;
+}
+
+/*Javascript Content*/
+#overlay.active{
+    opacity: 1;
+    pointer-events: all;
+}

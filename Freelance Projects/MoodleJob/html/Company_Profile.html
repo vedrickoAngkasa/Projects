@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=S, initial-scale=1.0">
+    <title>Company Profile</title>
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+	<link rel="stylesheet" href="./css/index.css">
+	<link rel="stylesheet" href="./css/MOODLEJOB_CSS.css">
+	<script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="./js/index.js"></script>
+    <script src="./js/form.js"></script>
+</head>
+<body>
+
+    <!-- Navigation -->
+    <div class="logo-container">
+        <a href ="index.html"><img src="./ArtAssets/MurdochUni_Logo.png" width="170" height="50"> </a>
+        
+        
+        <a href ="index.html"><img src="./ArtAssets/MoodleJob_Logo_V2.png" width="170" height="50"> </a>
+        </div>
+        
+          
+        
+        
+        <div class="topnav">
+           
+
+         
+            <a href="#" class="" id="logoutTextEmployers">Logout</a>
+            
+             
+          <a href="./ContactUs.html">Contact Us/Help</a>
+        
+        
+        
+        
+              <div class="dropdown">
+                <button class="dropabout" >Explore
+                  <i class="fa fa-caret-down"></i>
+                </button>
+                <div class="dropdown-about">
+                  <a href="About_Us_WIL.html">About Us</a>
+                  <a href="./Testimonial.html">Our Testimonials</a>
+                </div>
+                </div> 
+      
+          <a href="./WIL_Grid.html">Jobs</a>
+        
+        
+          <a href="javascript:void(0);" class="icon" onclick="mobilenav()">
+            <i class="fa fa-bars"></i>
+          </a>
+          
+        </div>
+        
+        <div class="mtopnav">
+          
+          <div id="myLinks">
+          <a href="MOODLEJOB_Employer_Login.html">Employers Login</a>
+          
+          <div class="dropdown">
+
+          </div> 
+          <a href="webpage_login_signup_ assignment.html">Current Student Login</a>
+          <a href="webpage_Contactus_help_assignment.html">Contact Us/Help</a>
+          <a href="About_Us_WIL.html">About Us</a>
+          <a href="./Testimonial.html">Our Testimonials</a>
+          </div>
+        </div>
+
+
+    <!-- My info Background with Text -->
+    <div class="container-fluid bg-dark">
+        <section id="section-hero-studentProfile" class="text-center text-white d-flex justify-content-start align-items-center">
+            <div class="container-fluid mt-5 text-center d-flex justify-content-center align-items-center" id="studentProfile">
+                My Info
+            </div>
+		</section>
+    </div>
+
+    <!-- Main Content of Company Profile Page -->
+
+        <div class="container vw-100 mt-4 d-flex flex-column-reverse flex-lg-row justify-content-center align-items-start pb-5">
+            
+            <!-- Information about the Company  -->
+            <div class="container vw-100 mt-2 mb-5">
+                <!-- About Us Details Label  -->
+                <div class="container student-label mb-2">
+                    About Us
+                </div>
+
+                <!-- About Us Details Content  -->
+                <div class="container-fluid d-flex flex-row justify-content-end align-items-start rounded-4 student-details p-3">
+
+                    <!-- Information about Company  -->
+                    <div class="container w-100" id="companyInformation">
+                        Apple Inc (Apple) designs, manufactures, and markets smartphones, tablets, personal computers (PCs), portable and wearable devices. The company also offers software and related services, accessories, and third-party digital content and applications. Apple’s product portfolio includes iPhone, iPad, Mac, iPod, Apple Watch, and Apple TV. It offers various consumer and professional software applications such as iOS, macOS, iPadOS, and watchOS, iCloud, AppleCare, Apple Pay, and accessories. Apple sells and delivers digital content and applications through Apple Store, App Store, Apple Arcade, Apple News+, Apple Fitness+, Apple Card, Apple Pay, and Apple Music. The company has business presence across the Americas, Europe, the Middle East, Africa, and Asia-Pacific. Apple is headquartered in Cupertino, California, the US
+                    </div>
+
+                    <!-- Edit Button  -->
+                    <div class="container-fluid d-flex justify-content-end w-25">
+                        <!-- Button trigger modal -->
+                    <button type="button" class="btn btn-outline-dark border border-0 student-edit-button" data-bs-toggle="modal" data-bs-target="#exampleModalCompany">
+                        <img src="./ArtAssets/Icons/Edit_Icon 2.png">
+                    </button>
+                    
+                    <!-- Modal -->
+                    <div class="modal fade" id="exampleModalCompany" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                            <h1 class="modal-title fs-5" id="exampleModalLabel">Change About Us</h1>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <form>
+                                    <label for="textareaAboutUsCompany" class="form-label ms-1">About Us: </label>
+                                    <textarea class="form-control mb-3" id="textareaAboutUsCompany" rows="5" placeholder="Write your message here." required=""></textarea>
+                                    <div class="alert alert-success d-none" id="validAboutUsCompany" role="alert">Success!!! Data has been updated</div>
+                                    <div class="alert alert-danger d-none" id="invalidAboutUsCompany" role="alert">Failed!!! Please check your data again</div>
+                                </form>
+                            </div>
+                            <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                            <button type="button" class="btn btn-primary" id="changeAboutUsCompany">Save changes</button>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+            </div>
+                </div>
+
+
+                   <!-- Our Jobs Details Label  -->
+                <div class="container about-myself-label my-4">
+                    Our Jobs
+                </div>
+
+                    <!-- About Jobs Details  -->
+                    <div class="container-fluid d-flex flex-row justify-content-center align-items-start rounded-4 company-details p-4 my-3 output-job">
+
+                        <table class="table table-borderless">
+                            <thead class="number-jobs">
+                              
+                            </thead>
+                            <tbody  class="result-output">                           
+                            </tbody>
+
+                            <tbody class="duration-output">
+                            </tbody>
+                          
+                            <tbody class="type-output">
+                            </tbody>
+
+                            <tbody class="location-output">
+                            </tbody>
+                        </table>
+                    </div>
+
+           
+
+
+                    <!-- Application Status Details Label  -->
+                   <div class="container about-myself-label my-4">
+                    Application Status
+                    </div>
+
+                    <!-- Application Status Details  -->
+                    <div class="container-fluid d-flex justify-content-center align-items-center flex-row rounded-4 student-details p-2">
+
+                        <div class="table-responsive w-100 p-3">
+                            <table class="table table-borderless">
+                                <thead>
+                                  <tr>
+                                    <th scope="col">Job ID</th>
+                                    <th scope="col">Position</th>
+                                    <th scope="col">Date Submitted</th>
+                                    <th scope="col">Date Approved</th>
+                                    <th scope="col">Approval Status</th>
+                                  </tr>
+                                </thead>
+                                <tbody>
+                                  <tr>
+                                    <th scope="row">001</th>
+                                    <td>Software Engineer</td>
+                                    <td>1 Jan 2023</td>
+                                    <td>2 Jan 2023</td>
+                                    <td>Approved</td>
+                                  </tr>
+                                  <tr>
+                                    <th scope="row">002</th>
+                                    <td>Freelance Software Engineer</td>
+                                    <td>2 Jan 2023</td>
+                                    <td>-</td>
+                                    <td>In review</td>
+                                  </tr>
+                                  <tr>
+                                    <th scope="row">003</th>
+                                    <td>Technical Intern</td>
+                                    <td>3 Jan 2023</td>
+                                    <td>4 Jan 2023</td>
+                                    <td>Approved</td>
+                                  </tr>
+                                  <tr>
+                                    <th scope="row">004</th>
+                                    <td>Software Programmer Intern</td>
+                                    <td>4 Jan 2023</td>
+                                    <td>5 Jan 2023</td>
+                                    <td>Approved</td>
+                                  </tr>
+                                </tbody>
+                              
+                            </table>
+                        </div>
+                   
+
+                    </div>
+
+            </div>
+
+
+            <!-- Company Profile  -->
+            <div class="container w-75 pb-5 mt-3 d-flex justify-content-end align-items-center">   
+
+                <!-- Company Image  -->
+                <div class="container w-100 d-flex justify-content-end">
+                    <figure class="figure">
+                        <img src="./ArtAssets/Apple Logo 1.png" class="figure-img img-fluid" alt="Figure image">
+                        
+                        <!-- Company Name and Edit Button  -->
+                        <div class="container d-flex justify-content-center align-items-center align-items-center">
+                            <span class="company-name" id="companyName">Apple Inc.</span>
+                          
+                                <!-- Button trigger modal -->
+                            <button type="button" class="btn btn-outline-dark border border-0 " data-bs-toggle="modal" data-bs-target="#exampleModal3">
+                                <img src="./ArtAssets/Icons/Edit_Icon 2.png">
+                            </button>
+                            
+                            <!-- Modal -->
+                            <div class="modal fade" id="exampleModal3" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                    <h1 class="modal-title fs-5" id="exampleModalLabel">Change Company Name</h1>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <form>
+                                            <label for="inputTextCompanyName" class="form-label ms-1">Company Name: </label>
+                                            <input type="text" class="form-control mb-3" placeholder="Place Company Name here" id="inputTextCompanyName">
+                                            <div class="alert alert-success d-none" id="validNameCompany" role="alert">Success!!! Data has been updated</div>
+                                            <div class="alert alert-danger d-none" id="invalidNameCompany" role="alert">Failed!!! Please check your data again</div>
+                                        </form>
+                                    </div>
+                                    <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                    <button type="button" class="btn btn-primary" id="changeCompanyName">Save changes</button>
+                                    </div>
+                                </div>
+                                </div>
+                            </div>
+                            
+                        </div>
+
+                        <div class="container d-flex mt-4 justify-content-center">
+                            
+                            <button type="button" class="btn btn-danger w-75 p-2 button-saved-jobs" data-bs-toggle="modal" data-bs-target="#exampleModalCreateJob">
+                                Create Job
+                              </button>
+                              
+                              <!-- Modal -->
+                              <div class="modal fade" id="exampleModalCreateJob" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                <div class="modal-dialog">
+                                  <div class="modal-content">
+                                    <div class="modal-header">
+                                      <h1 class="modal-title fs-5" id="exampleModalLabel">Create Job</h1>
+                                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <form id="createJob" style="font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">
+                                            <fieldset>
+                                                <div class="mb-3">
+                                                    <label for="inputJobTitle" class="form-label">Job Title :</label>
+                                                    <input type="text" class="form-control" placeholder="Enter Job Title" id="inputJobTitle"required value="Developer">
+                                                </div>
+                                                <div class="mb-3">
+                                                    <label for="inputJobDuration" class="form-label">Job Duration :</label>
+                                                    <input type="text" class="form-control" placeholder="Enter Job Duration" id="inputJobDuration"required value="2 months">
+                                                </div>
+                                                <div class="mb-3">
+                                                    <label for="inputJobType" class="form-label">Job Type :</label>
+                                                    <input type="text" class="form-control" placeholder="Enter Job Type" id="inputJobType" required value="Contract">
+                                                </div>
+                                                <div class="mb-3">
+                                                    <label for="inputJobSalary" class="form-label">Job Salary :</label>
+                                                    <input type="text" class="form-control" placeholder="Enter Job Salary" id="inputJobSalary" required value="1K per month">
+                                                </div>
+
+                                                <div class="mb-3">
+                                                    <label for="inputCompany" class="form-label">Company Name :</label>
+                                                    <input type="text" class="form-control" placeholder="Enter Company Name" id="inputCompany" required value="Apple">
+                                                </div>
+                                                <div class="mb-3">
+                                                    <label for="jobLocation" class="my-2">Job Location :</label>
+                                                    <select class="form-select" id="jobLocation" required>
+                                                      <option value="" disabled hidden selected>Select</option>
+                                                      <option value="remote">Remote</option>
+                                                      <option value="on site">On Site</option>
+                                                    </select>
+                                                </div>
+                                                <div class="mb-3">
+                                                    <label for="inputJobDescription" class="my-2">Job Description :</label>
+                                                    <textarea class="form-control" id="inputJobDescription" rows="5" placeholder="Enter Job Description" required ></textarea>
+                                                    
+                                                </div>
+
+                                                <div class="alert alert-success d-none" role="alert" id="successCreateJob">
+                                                    Succesfully Created Job!!!
+                                                  </div>
+                                                  <div class="alert alert-danger d-none" role="alert" id="failCreateJob">
+                                                    Failed to Create Job!!!
+                                                  </div>
+                                            </fieldset>
+                                        </form>
+                                    </div>
+                                    <div class="modal-footer">
+                                      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                      <button type="button" class="btn btn-primary" id="createJobBtn">Submit</button>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                        </div>
+
+                        <div class="container d-flex my-4 justify-content-center">
+                            <button type="button" class="btn btn-danger w-75 p-2 button-saved-jobs" id="updateCompanyInfo">Update Company Information</button>
+                        </div>
+
+
+                      </figure>
+                </div>
+
+            </div>
+        
+
+    
+        </div>    
+</body>
+</html>

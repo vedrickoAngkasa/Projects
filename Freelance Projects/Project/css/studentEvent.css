@@ -1,0 +1,91 @@
+.bannerContentEvent{
+    background-color: rgb(32, 32, 32);
+}
+
+.bannerEventLogo{
+    background-image: linear-gradient( 
+        rgba(0, 0, 0, 0.5), rgba(10, 11, 63, 0.5) ),
+        url("Images/studentEventPage2.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 560px;
+    width: auto;
+}
+.navList nav ul a:hover{
+    color: orange;
+    transition: all 0.75s;
+}
+
+.bannerEventLogo h1{
+    display: flex;
+    justify-content: center;
+    padding-top: 15%;
+    font-size: 52px;
+    font-family: Montserrat;
+    letter-spacing: 2px;
+    line-height: 125%;
+    color: rgb(255, 255, 255);
+    text-align: center;
+}
+
+.bannerEventLogo span{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    font-family: MontserratBold;
+    letter-spacing: 2px;
+    font-size: 24px;
+    color: orange;
+    line-height: 125%;
+}
+
+.eventStudentHeader{
+    margin:5% 3% 2% 3%;
+}
+
+.eventStudentHeader h1{
+    font-family: MontserratBold;
+}
+
+.eventStudentContent{
+    display: flex;
+    flex-direction: column;
+
+}
+
+.eventBusiness,
+.eventOrientation{
+    margin: 2% 3%;
+    display: flex;
+    flex-direction: row;
+   
+}
+
+.businessDesc,
+.orientationDesc{
+    display: flex;
+    flex-direction: column ;
+    margin: 0% 2%;
+    
+    font-family: Montserrat;
+}
+
+
+
+.businessDesc section,
+.orientationDesc section{
+    margin: 0% 5% 5% 5%;
+}
+
+.businessDesc section span,
+.orientationDesc section span{
+    font-family: Arial, Helvetica, sans-serif;
+    width: 75%;
+}
+
+.businessDesc .descriptionBusiness,
+.orientationDesc .descriptionOrientation{
+    width: 80%;
+    
+}
+

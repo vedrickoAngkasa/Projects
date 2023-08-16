@@ -1,0 +1,455 @@
+/*styling for the login page*/
+main{
+    background-color: rgb(255, 255, 255);
+}
+
+.containerAdmin{
+    background-color: rgb(78, 78, 78);
+    margin: 20%;
+    box-shadow: 2px 2px  rgb(0,0,0,0.5);
+    border: 1px solid black;
+}
+
+.logoLogin{
+    width: 100%;
+}
+
+.logoLogin figure{
+    display: flex;
+    justify-content: center;
+    
+}
+
+.logoLogin figure img{
+    width: 100%;
+    height: auto;
+}
+
+.formContainer{
+    display: flex;
+    flex-direction: row;
+    box-shadow: 2px 2px rgb(0,0,0,0.5);
+    
+}
+
+.wrongInput{
+    display: none;
+    color: red;
+}
+
+.logoLogin{
+    display: flex;
+    justify-content: center;
+    padding: 3%;
+    
+}
+.formContainer form h1{
+    
+    font-family: MontserratBold;
+    margin: 2.5% 2.5%;
+}
+
+.formContainer form{
+    background-color: rgb(255, 255, 255);
+    margin: 0%;
+    display: flex;
+    flex-direction: column;
+    padding: 0% 1% 0% 1%;
+    width: 100%;
+}
+
+.formContainer form label{
+    margin: 1.5%;
+    padding: 1%;
+    font-family: MontserratBold;
+}
+
+.password,
+.formContainer form .username{
+    margin: 0% 2.5%;
+    height: 25px;
+    width: 75%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.submitBtn{
+    display: flex;
+    justify-content: center;
+}
+
+.submitBtn button{
+    font-family: Montserrat;
+    background-color: black;
+    color: white;
+    text-align: center;
+    margin: 5% 2% 5% 2%;
+    width: 14%;
+    height: 35px;
+}
+
+
+
+/*Styling for admin page*/
+
+html{
+    scroll-behavior: smooth;
+    background-color: white;
+}
+
+body{
+    overflow: auto;
+    background-color: white;
+    
+}
+
+main{
+    display: flex;
+    flex-direction: row;
+   
+}
+
+
+.navBarAdmin{
+    background-color: rgb(32,32,32);
+    position: absolute;
+    width: 200px;
+    height: 275%;
+  
+}
+
+.navLinks{
+    
+    height: 50%;
+    width: auto;
+    left: 22.5% ;
+    top: 22.5%;
+    bottom: 22.5%;
+    margin-left: 10% ;
+    position: sticky;
+    display: flex;
+    text-align: left;
+}
+
+.navLinks ul{
+    display: flex;
+    height: 50%;
+    width: 150%;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.navLinks nav ul li a{
+    color: white;
+    letter-spacing: 1px;
+    font-family: MontserratBold;
+    text-decoration: none;
+
+}
+.navLinks nav ul li a:hover{
+    color: orange;
+    transition: all 0.75s;
+}
+
+
+
+.displayContent{
+    background-color: rgb(235, 235, 235);
+   
+}
+
+.studentSection,
+.lecturerSection,
+.facultySection,
+.degreeSection{
+    background-color: white;
+}
+
+.studentSection .titleContent,
+.lecturerSection .titleContent,
+.facultySection .titleContent,
+.titleContent{
+    padding-top: 2%;
+    position: relative;
+    left:16%;
+}
+
+.contentData{
+    position: relative;
+    left: 25%;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.dataTitle{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+
+}
+
+.dataDetails{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.dataDetails input{
+    position: relative;
+    width: 50%;
+    margin: 1%;
+    height: auto;
+}
+
+.titleContent h1{
+    font-family: MontserratBold;
+    letter-spacing: 1px;
+    padding: 2% 0% 0% 0%;
+}
+
+.titleContent aside{
+    margin-bottom: 1%;
+}
+
+/*Degree Column*/
+
+.assessmentsDesc,
+.assessments,
+.learningOutcome,
+.emailLecturer,
+.degreeSection .lecturerName,
+.overview,
+.academicTerm,
+.degreeSection .facultyID,
+.degreeName,
+.degreeSection .degreeID{
+    margin: 1%;
+}
+
+.assessmentsDesc section,
+.assessments section,
+.learningOutcome section,
+.emailLecturer section,
+.degreeSection .lecturerName section,
+.overview section,
+.academicTerm section,
+.degreeSection .facultyID section,
+.degreeName section,
+.degreeSection .degreeID section{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    position: relative;
+}
+
+.assessmentsDesc section input,
+.assessments section input,
+.learningOutcome section input,
+.emailLecturer section input,
+.degreeSection .lecturerName section input,
+.overview section input,
+.academicTerm section input,
+.degreeSection .facultyID section input,
+.degreeName section input,
+.degreeSection .degreeID section input{
+    margin:6% 0%;
+ 
+   
+}
+
+
+ .buttonEdit{
+    background-color: white;
+    position: relative;
+    left: 14.5%;
+    width: 125%;
+ }
+ .buttonEdit input{
+    font-size: 20px;
+    padding: 5px;
+    margin: 0.5% 1%;
+    font-family: Montserrat;
+}
+
+/*Faculty Column*/
+
+.facultySection .contentData{
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    position: relative;
+    left: 15.5%;
+}
+
+.facultySection .facultyName{
+    display: flex;
+    flex-direction: column;
+}
+
+.facultySection .facultyID,
+.facultySection .facultyName{
+    margin: 1%;
+}
+
+.facultySection .facultyName span{
+    position: relative;
+    left: 25%;
+}
+.facultySection .facultyID span{
+    position: relative;
+    left: 5%;
+}
+
+.facultySection .facultyID section{
+    left: 0%;
+    display: flex;
+    flex-direction:column ;
+    justify-content: space-around;
+    position: relative;
+}
+.facultySection .facultyName section{
+    left: 18%;
+    display: flex;
+    flex-direction:column ;
+    justify-content: space-around;
+    position: relative;
+}
+
+.facultySection .facultyID section input,
+.facultySection section input{
+    margin: 6% ;
+    width: 105%;
+}
+
+.facultySection .buttonEdit{
+    background-color: white;
+    position: relative;
+    left: 15%;
+    width: 125%;
+}
+.facultySection .buttonEdit input{
+    font-size: 20px;
+    padding: 5px;
+    margin: 0.5% 1%;
+    font-family: Montserrat;
+}
+
+
+/*Lecturer Column*/
+.lecturerSection .contentData{
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    position: relative;
+    left: 21%;
+    
+}
+
+.lecturerSection .background,
+.lecturerSection .imageFile,
+.lecturerSection .experienceJob,
+.lecturerSection .facultyName,
+.lecturerSection .lecturerName,
+.lecturerSection .facultyID,
+.lecturerSection .lecturerID{
+    margin-right: 2% ;
+}
+
+
+.lecturerSection .background section,
+.lecturerSection .imageFile section,
+.lecturerSection .experienceJob section,
+.lecturerSection .facultyName section,
+.lecturerSection .lecturerName section,
+.lecturerSection .facultyID section,
+.lecturerSection .lecturerID section{
+
+    display: flex;
+    flex-direction:column ;
+    justify-content: space-around;
+}
+
+.lecturerSection .background section input,
+.lecturerSection .imageFile section input,
+.lecturerSection .experienceJob section input,
+.lecturerSection .facultyName section input,
+.lecturerSection .lecturerName section input,
+.lecturerSection .facultyID section input,
+.lecturerSection .facultyID section input,
+.lecturerSection .lecturerID section input{
+    margin: 6% 6% 6% 0%;
+   
+}
+
+
+.lecturerSection .buttonEdit{
+    background-color: white;
+    position: relative;
+    left: 14.75%;
+    width: 125%;
+}
+.lecturerSection .buttonEdit input{
+    font-size: 20px;
+    padding: 5px;
+    margin: 0.5% 1%;
+    font-family: Montserrat;
+}
+
+
+/*Student Column*/
+
+
+.studentSection .contentData{
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    position: relative;
+    left: 21%;
+}
+
+
+.studentSection .rating,
+.studentSection .imageFile,
+.studentSection .degreeDescription,
+.studentSection .degree,
+.studentSection .studentName,
+.studentSection .degreeID,
+.studentSection .studentID{
+    margin-right: 2%;
+}
+
+.studentSection .rating section,
+.studentSection .imageFile section,
+.studentSection .degreeDescription section,
+.studentSection .degree section,
+.studentSection .studentName section,
+.studentSection .degreeID section,
+.studentSection .studentID section{
+    
+    display: flex;
+    flex-direction:column ;
+    justify-content: space-around;
+}
+
+.studentSection .rating section input,
+.studentSection .imageFile section input,
+.studentSection .degreeDescription section input,
+.studentSection .degree section input,
+.studentSection .studentName section input,
+.studentSection .degreeID section input,
+.studentSection .studentID section input{
+    margin: 6% 6% 6% 0%;
+}
+
+.studentSection .buttonEdit{
+    background-color: white;
+    position: relative;
+    left: 14.75%;
+    width: 125%;
+}
+.studentSection .buttonEdit input{
+    font-size: 20px;
+    padding: 5px;
+    margin: 0.5% 1%;
+    font-family: Montserrat;
+}

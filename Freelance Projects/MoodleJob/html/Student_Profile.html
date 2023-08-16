@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=S, initial-scale=1.0">
+    <title>Student Profile</title>
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+	<link rel="stylesheet" href="./css/index.css">
+	<link rel="stylesheet" href="./css/MOODLEJOB_CSS.css">
+	<script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="./js/index.js"></script>
+    <script src="./js/form.js"></script>
+</head>
+<body>
+
+    <!-- Navigation -->
+    <div class="logo-container">
+        <a href ="index.html"><img src="./ArtAssets/MurdochUni_Logo.png" width="170" height="50"> </a>
+        
+        
+        <a href ="index.html"><img src="./ArtAssets/MoodleJob_Logo_V2.png" width="170" height="50"> </a>
+        </div>
+        
+          
+        
+        
+        <div class="topnav">
+           
+
+         
+            <a href="#" class="" id="logoutText">Logout</a>
+            
+          
+        
+          <!-- <div class="dropdown">
+            <button class="dropbtn" >Contact Us/Help
+              <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+              <a href="webpage_Contactus_help_assignment.html">Help</a>
+          <a href="webpage_Contactus_help_assignment.html">About Us</a>
+              <a href="#">Testimonials </a>
+            </div>
+            </div>  -->
+        
+             
+          <a href="./ContactUs.html">Contact Us/Help</a>
+        
+        
+        
+        
+              <div class="dropdown">
+                <button class="dropabout" >Explore
+                  <i class="fa fa-caret-down"></i>
+                </button>
+                <div class="dropdown-about">
+                  <a href="About_Us_WIL.html">About Us</a>
+                  <a href="./Testimonial.html">Our Testimonials</a>
+                </div>
+                </div> 
+        
+          <!-- <a href="webpage_Contactus_help_assignment.html">About Us</a> --> 
+          <a href="./WIL_Grid.html">Jobs</a>
+        
+        
+          <a href="javascript:void(0);" class="icon" onclick="mobilenav()">
+            <i class="fa fa-bars"></i>
+          </a>
+          
+        </div>
+        
+        <div class="mtopnav">
+          
+          <div id="myLinks">
+          <a href="MOODLEJOB_Employer_Login.html">Employers Login</a>
+          
+          <div class="dropdown">
+          <!-- <button class="dropbtn" onclick="myFunction()">Categories
+            <i class="fa fa-caret-down"></i>
+          </button>
+          <div class="dropdown-content" id="myDropdown">
+            <a href="#">Electronics</a>
+            <a href="#">Laptop/Mobile</a>
+            <a href="#">Women's Fashion</a>
+            <a href="#">Men's Fashion</a>
+            <a href="#">Entertainments</a>
+          </div> -->
+          </div> 
+          <a href="webpage_login_signup_ assignment.html">Current Student Login</a>
+          <a href="webpage_Contactus_help_assignment.html">Contact Us/Help</a>
+          <a href="About_Us_WIL.html">About Us</a>
+          <a href="./Testimonial.html">Our Testimonials</a>
+          </div>
+        </div>
+    <!-- My info Background with Text -->
+    <div class="container-fluid bg-dark">
+        <section id="section-hero-studentProfile" class="text-center text-white d-flex justify-content-start align-items-center">
+            <div class="container-fluid mt-5 text-center d-flex justify-content-center align-items-center" id="studentProfile">
+                My Info
+            </div>
+		</section>
+    </div>
+
+    <!-- Main Content of Student Profile Page -->
+
+        <div class="container vw-100 mt-4 d-flex flex-column-reverse flex-lg-row justify-content-center align-items-start pb-5">
+            
+            <!-- Information about the Student  -->
+            <div class="container vw-100 mt-2 mb-5">
+                <!-- Student Details Label  -->
+                <div class="container student-label mb-2">
+                    Student Details
+                </div>
+
+                <!-- Student Details Content  -->
+                <div class="container-fluid d-flex flex-row justify-content-end align-items-start rounded-4 student-details p-3">
+
+                    <!-- Information about Student  -->
+                    <div class="container w-100" id="studentDetails">
+                        <div class="container my-2">
+                            <span>Student Number: </span>
+                            <span>3333 2222</span>
+                        </div>
+    
+                        <div class="container my-2">
+                            <span>Qualifications: </span>
+                            <span>Bachelor in Computer Science (BSc)</span>
+                        </div>
+    
+                        <div class="container my-2">
+                            <span>Year: </span>
+                            <span>2</span>
+                        </div>
+                    </div>
+
+                    <!-- Edit Button  -->
+                    <div class="container-fluid d-flex justify-content-end w-25">
+                                <!-- Button trigger modal -->
+                            <button type="button" class="btn btn-outline-dark border border-0 student-edit-button" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                <img src="./ArtAssets/Icons/Edit_Icon 2.png">
+                            </button>
+                            
+                            <!-- Modal -->
+                            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                    <h1 class="modal-title fs-5" id="exampleModalLabel">Change Student Details</h1>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <form>
+                                            <label for="textarea" class="form-label ms-1">Student Details: </label>
+                                            <textarea class="form-control mb-3" id="textareaStudentDetails" rows="5" placeholder="Write your message here."></textarea>
+                                            <div class="alert alert-success d-none" id="validStudentDetails" role="alert">Success!!! Data has been updated</div>
+                                            <div class="alert alert-danger d-none" id="invalidStudentDetails" role="alert">Failed!!! Please check your data again</div>
+                                        </form>
+                                    </div>
+                                    <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                    <button type="button" class="btn btn-primary" id="changeStudentDetails">Save changes</button>
+                                    </div>
+                                </div>
+                                </div>
+                            </div>
+                    </div>
+                </div>
+
+                   <!-- About Myself Details Label  -->
+                   <div class="container about-myself-label  my-4">
+                    About Myself
+                    </div>
+
+                    <!-- About Myself Details  -->
+                    <div class="container-fluid d-flex flex-row justify-content-end align-items-start rounded-4 student-details p-2">
+
+                        <!-- Information about Student myself  -->
+                        <div class="container w-100 p-5" id="studentDescription">
+                           <div class="container p-5 text-center">
+                                Student Description/ Status
+                           </div>
+                        </div>
+    
+                        <!-- Edit Button  -->
+                        <div class="container-fluid d-flex justify-content-end w-25">
+                            <!-- Button trigger modal -->
+                        <button type="button" class="btn btn-outline-dark border border-0 student-edit-button" data-bs-toggle="modal" data-bs-target="#exampleModal2">
+                            <img src="./ArtAssets/Icons/Edit_Icon 2.png">
+                        </button>
+                        
+                        <!-- Modal -->
+                        <div class="modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                            <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                <h1 class="modal-title fs-5" id="exampleModalLabel">Change About Myself</h1>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <form>
+                                        <label for="textareaStudentDescription" class="form-label ms-1">About Myself: </label>
+                                        <textarea class="form-control mb-3" id="textareaStudentDescription" rows="5" placeholder="Write your message here."></textarea>
+                                        <div class="alert alert-success d-none" id="validStudentDescription" role="alert">Success!!! Data has been updated</div>
+                                        <div class="alert alert-danger d-none" id="invalidStudentDescription" role="alert">Failed!!! Please check your data again</div>
+                                    </form>
+                                </div>
+                                <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                <button type="button" class="btn btn-primary" id="changeStudentDescription">Save changes</button>
+                                </div>
+                            </div>
+                            </div>
+                        </div>
+                </div>
+                    </div>
+
+
+                    <!-- Past Experience Details Label  -->
+                   <div class="container about-myself-label my-4">
+                    Past Experience
+                    </div>
+
+                    <!-- Past Experience Details  -->
+                    <div class="container-fluid d-flex flex-row justify-content-end align-items-start rounded-4 student-details p-2">
+
+                        <!-- Information about Past Experience  -->
+                        <div class="container w-100 p-5" id="pastExperienceStudent">
+                           <div class="container p-1 text-center">
+                                Past Work/ Experience Description
+                           </div>
+                        </div>
+    
+                        <!-- Edit Button  -->
+                        <div class="container-fluid d-flex justify-content-end w-25">
+                            <!-- Button trigger modal -->
+                        <button type="button" class="btn btn-outline-dark border border-0 student-edit-button" data-bs-toggle="modal" data-bs-target="#exampleModal3">
+                            <img src="./ArtAssets/Icons/Edit_Icon 2.png">
+                        </button>
+                        
+                        <!-- Modal -->
+                        <div class="modal fade" id="exampleModal3" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                            <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                <h1 class="modal-title fs-5" id="exampleModalLabel">Change Past Experience</h1>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <form>
+                                        <label for="textareaStudentPastExperience" class="form-label ms-1">Past Experience: </label>
+                                        <textarea class="form-control mb-3" id="textareaStudentPastExperience" rows="5" placeholder="Write your message here."></textarea>
+                                        <div class="alert alert-success d-none" id="validStudentPastExperience" role="alert">Success!!! Data has been updated</div>
+                                        <div class="alert alert-danger d-none" id="invalidStudentPastExperience" role="alert">Failed!!! Please check your data again</div>
+                                    </form>
+                                </div>
+                                <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                <button type="button" class="btn btn-primary" id="changePastExperienceStudent">Save changes</button>
+                                </div>
+                            </div>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+
+            </div>
+
+
+            <!-- Student Profile  -->
+            <div class="container w-75 pb-5 mt-3 d-flex justify-content-end align-items-center">   
+
+                <!-- Student Image  -->
+                <div class="container w-100 d-flex justify-content-end">
+                    <figure class="figure">
+                        <img src="./ArtAssets/pexels-photo-1681010 1.png" class="figure-img img-fluid" alt="Figure image">
+                        
+                        <!-- Student Name and Edit Button  -->
+                        <div class="container d-flex justify-content-center align-items-center align-items-center">
+                            <span class="student-name me-2" id="studentName">John Doe</span>
+                            <button type="button" class="btn btn-outline-dark border border-0 " data-bs-toggle="modal" data-bs-target="#exampleModalStudentName">
+                                <img src="./ArtAssets/Icons/Edit_Icon 2.png">
+                            </button>
+                            
+                            <!-- Modal -->
+                            <div class="modal fade" id="exampleModalStudentName" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                    <h1 class="modal-title fs-5" id="exampleModalLabel">Change Student Name</h1>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <form>
+                                            <label for="inputStudentName" class="form-label ms-1">Student Name: </label>
+                                            <input type="text" class="form-control mb-3" placeholder="Place Student Name here" id="inputStudentName">
+                                            <div class="alert alert-success d-none" id="validStudentName" role="alert">Success!!! Data has been updated</div>
+                                            <div class="alert alert-danger d-none" id="invalidStudentName" role="alert">Failed!!! Please check your data again</div>
+                                        </form>
+                                    </div>
+                                    <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                    <button type="button" class="btn btn-primary" id="changeStudentName">Save changes</button>
+                                    </div>
+                                </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="container d-flex mt-4 justify-content-center">
+                            <button type="button" class="btn btn-danger w-75 p-2 button-saved-jobs">Saved Jobs</button>
+                        </div>
+
+                        <div class="container d-flex my-4 justify-content-center">
+                            <button type="button" class="btn btn-danger w-75 p-2 button-saved-jobs" id="updatePersonalInfo">Update Personal Information</button>
+                        </div>
+
+
+                      </figure>
+                </div>
+
+            </div>
+        
+
+    
+        </div>    
+</body>
+</html>

@@ -1,0 +1,124 @@
+.secondPageContent{
+    margin: 5% 0%;
+    display: flex;
+    flex-direction: column;
+}
+
+.lecturerContent{
+    margin: 2% 3%;
+    padding: 1%;
+}
+
+.lecturerDesc{
+    padding: 0.5% 5%;
+    margin: 0% 3% 4% 3%;
+}
+
+.lecturerDesc h1{
+    font-family: MontserratBold;
+    letter-spacing: 1.5px;
+}
+
+.lecturerDesc aside{
+    margin: 0.25% 1% 1% 0%;
+    width: 25%;
+    padding:0.25% 1% 1% 0%;
+}
+
+.lecturerDesc p{
+    font-family: Arial, Helvetica, sans-serif;
+    letter-spacing: 1px;
+    line-height: 125%;
+ 
+}
+
+
+.lecturerContainer{
+    display: flex;
+    flex-direction: row;
+}
+
+
+
+/*Styling for container*/
+.containerLecturer{
+    background-color: rgb(237,237,237);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.containerContent3{
+    margin: 3.5% 7% 3.5% 0%;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    width: 33%;
+    height: auto;
+    justify-content: space-around;
+}
+.containerContent2{
+    margin: 3.5% 3.5% 3.5% 3.5%;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    width: 33%;
+    height: auto;
+    justify-content: space-around;
+}
+.containerContent1{
+   margin: 3.5% 0% 3.5% 7.75%;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    width: 33%;
+    height: auto;
+    justify-content: space-around;
+}
+
+.profilePicLecturer{
+    width: 100%;
+    height: 100%;
+}
+
+.profilePicLecturer img{
+    width: 100%;
+    height: auto;
+}
+
+.profilePicLecturer figcaption{
+    font-family: MontserratBold;
+    text-align: center;
+    margin: 2% 0.5% 0%;
+    padding: 0% 0.5%;
+}
+
+
+.title{
+    text-align: center;
+    margin: 0% 0.5%;
+    width: 100%;
+    height: auto;
+    padding: 0% 0.5%;
+    line-height: 225%;
+    font-family: Montserrat;
+    font-size: 14px;
+    color: rgb(83, 83, 83);
+}
+
+.title aside{
+    margin: 0.5%;
+}
+
+.backgroundLecturer{
+    width: 100%;
+    height: 100%;
+    margin: 0.5%;
+    padding: 2%;
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: italic;
+    text-align: center;
+    color: rgb(119, 119, 119);
+} 
+
+
+

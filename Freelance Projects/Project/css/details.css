@@ -1,0 +1,182 @@
+html{
+    scroll-behavior: smooth;
+}
+
+.headerContent{
+    background-color: rgb(0, 0, 0);
+}
+
+.bannerContent{
+    background-color: rgb(32, 32, 32);
+    background-image: none;
+}
+
+
+/*Page Three Content Page*/
+.degreeHeader{
+    margin: 4% 2%;
+    padding: 1%;
+    line-height: 175%;
+}
+
+.degreeHeader h1{
+    font-family: MontserratBold;
+    letter-spacing: 1px;
+}
+
+.degreeHeader aside{
+    letter-spacing: 0px;
+    font-weight: bolder;
+}
+
+/*Page Description Styling*/
+.detailsContent{
+    display: flex;
+    flex-direction: row;
+    padding: 3%;
+    justify-content: space-between;
+}
+
+
+
+.degreeNav{
+    top: 15%;
+    position: sticky;
+    overflow: hidden;
+    width: 120%;
+    height: auto;
+    
+}
+
+
+
+.degreeNav ul{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.degreeNav a,
+.degreeNav li{
+    font-family: MontserratBold;
+    margin: 0% 2%;
+    padding: 8% 2%;
+    text-decoration: none;
+    color:rgb(102, 102, 102);
+    font-size: 17.5px;
+    letter-spacing: 1px;
+    width: 100%;
+    height: 120%;
+  
+}
+
+.degreeNav a:hover,
+.degreeNav li:hover{
+    color: rgb(22, 22, 22);
+    transition: all 1s;
+}
+
+.degreeNav li:hover{
+    background-color: rgb(230, 230, 230);
+    transition: all 1s;
+}
+
+
+
+.description{
+    width: 75%;
+}
+
+.underlineHeader{
+    letter-spacing: 0px;
+    margin: 0% 0% 5% 0%;
+}
+
+.assesments,
+.outcomes,
+.contact,
+.description .overview{
+    margin: 3%;
+}
+
+.assesments h1,
+.outcomes h1,
+.contact h1,
+.overview h1{
+    font-family: MontserratBold;
+    letter-spacing: 1px;
+}
+
+.assesments aside,
+.outcomes aside,
+.contact aside,
+.overview aside{
+    margin: 0% 0.75% 1% 0.75%; 
+    padding: 0.5% 0%;
+}
+
+.assesments p,
+.outcomes p,
+.contact p,
+.overview p{
+    font-family: Arial, Helvetica, sans-serif;
+    letter-spacing: 1px;
+    line-height: 125%;
+    margin: 0% 0.75% 1% 0.75%; 
+    padding: 0.5% 0%;
+}
+
+.outcomes .underline,
+.contact .underline,
+.overview .underline{
+    margin: 0%; 
+    letter-spacing: 0px;
+}
+
+
+.contact section{
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 125%;
+    margin: 1.5% 0.5% 2.5%;
+    font-weight: bold;
+}
+
+.emailContact,
+.nameContact{
+    padding: 0% 4%;
+}
+
+.emailContact aside span,
+.nameContact aside span{
+    margin: 0% 3%;
+    font-weight: normal;
+}
+
+.outcomes section{
+    margin: 0% 4.5% 1% 1.5%; 
+    padding: 0.5% 0%;
+}
+
+
+.outcomes ol li{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0% 0.75% 1% 0.75%; 
+    padding: 0.5% 0%;
+    letter-spacing: 1px;
+    line-height: 125%;
+}
+
+
+
+.assesments ul li span{
+    line-height: 125%;
+    font-family: Montserrat;
+    font-weight: bolder;
+    letter-spacing: 1px;
+}
+
+.assesments ul li section{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 2% 3%;
+    color:rgb(102, 102, 102);
+}

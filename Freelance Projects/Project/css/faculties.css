@@ -1,0 +1,183 @@
+main{
+    background-color: white;
+}
+
+.pageThreeContent{
+        margin: 5% 0%;
+        display: flex;
+        flex-direction: column;
+        background-color: white;
+}
+
+.facultiesDesc{
+    padding: 0.5% 5%;
+    margin: 2% ;
+}
+
+.facultiesDetails h1,
+.facultiesDesc h1{
+    font-family: MontserratBold;
+    letter-spacing: 1.5px;
+}
+
+
+.facultiesDesc aside{
+    margin: 0.25% 1% 1% 0%;
+    width: 25%;
+    padding:0.25% 1% 1% 0%;
+}
+
+.facultiesDesc p{
+    font-family: Arial, Helvetica, sans-serif;
+    letter-spacing: 1px;
+    line-height: 125%;
+}
+
+.underline{
+    text-align: center;
+    padding: 0.5% 5%;
+    margin: 2% ;
+}
+
+.backgroundPic img{
+    width: 100%;
+}
+
+.facultiesDetails h1{
+    padding: 0.5% 5%;
+    margin: 0% 2%;
+}
+
+.facultiesDetails aside{
+    padding: 0% 5%;
+    margin: 0% 2% ;
+}
+
+.facultiesDetails p{
+    padding: 0% 5%;
+    margin: 2% 2% ;
+    font-family: Arial, Helvetica, sans-serif;
+    letter-spacing: 1px;
+    line-height: 125%;
+}
+
+.facultiesDetails .underline{
+    letter-spacing: 0px;
+}
+
+.facultiesDivision{
+    padding: 0.5% 2%;
+    margin: 5%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.detailsFaculties ul,
+.nameFaculties ul,
+.titleFaculties ul{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  
+}
+
+.detailsFaculties li,
+.nameFaculties li,
+.titleFaculties li{
+    width: 110%;
+    height: 75px;
+    font-size: larger;
+    font-family: MontserratBold;
+}
+
+.detailsFaculties a,
+.nameFaculties a,
+.titleFaculties a{
+    text-decoration: none;
+    height: 100%;
+    color: gray;
+}
+
+.detailsFaculties a:hover,
+.nameFaculties a:hover,
+.titleFaculties a:hover{
+    color: rgb(22, 22, 22);
+    transition: all 0.75s;
+}
+
+
+/*Styling PopUp*/
+
+.facultiesAttribute{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(1);
+    transition: 200ms ease-in-out;
+    border: 1px solid black;
+    border-radius: 10px;
+    z-index: 1 ;
+    background-color: white;
+    width: 600px;
+    max-width: 90%;
+}
+
+
+
+
+
+
+.facultiesHeader{
+    display: flex;
+    padding: 1%;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.facultiesHeader h1{
+    margin: 7% 0% 0% 5%;
+    width: 110%;
+}
+
+.facultiesHeader aside{
+    margin: 0% 0% 0% 6.5%;
+}
+
+.facultiesHeader .close-button{
+    cursor: pointer;
+    border: none;
+    background: none;
+    outline: none;
+    margin: 0.5% 2.5%;
+    font-size: 36px;
+}
+
+ .degreeOption{    
+    padding:  6.5% 5% 1%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+
+
+#overlay{
+    transition: 200ms ease-in-out;
+    position: fixed;
+    opacity: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.5);
+    pointer-events: none;
+}
+
+/*Javascript Content*/
+#overlay.active{
+
+    opacity: 1;
+    pointer-events: all;
+}

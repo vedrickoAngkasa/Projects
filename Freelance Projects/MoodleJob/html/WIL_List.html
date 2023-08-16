@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WIL Opportunities Grid</title>
+	<link rel="stylesheet" href="./css/bootstrap.min.css">
+	<link rel="stylesheet" href="./css/index.css">
+	<link rel="stylesheet" href="./css/MOODLEJOB_CSS.css">
+	<script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="./js/index.js"></script>
+    <script src="./js/form.js"></script>
+</head>
+<body class="p-0 m-0">
+
+    <!-- NAVIGATION BAR -->
+
+    <div class="logo-container">
+        <a href ="index.html"><img src="./ArtAssets/MurdochUni_Logo.png" width="170" height="50"> </a>
+        
+        
+        <a href ="index.html"><img src="./ArtAssets/MoodleJob_Logo_V2.png" width="170" height="50"> </a>
+        </div>
+        
+          
+        
+        
+        <div class="topnav">
+           
+          
+        
+          <div class="dropdown">
+            <button class="droplogin" >Logins
+              <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-login">
+              <a href="Student_Login.html">Current Student</a>
+              <a href="MOODLEJOB_Employer_Login.html">Employers </a>
+            </div>
+            </div> 
+         
+        
+          <!-- <div class="dropdown">
+            <button class="dropbtn" >Contact Us/Help
+              <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+              <a href="webpage_Contactus_help_assignment.html">Help</a>
+          <a href="webpage_Contactus_help_assignment.html">About Us</a>
+              <a href="#">Testimonials </a>
+            </div>
+            </div>  -->
+        
+             
+          <a href="./ContactUs.html">Contact Us/Help</a>
+        
+        
+        
+        
+              <div class="dropdown">
+                <button class="dropabout" >Explore
+                  <i class="fa fa-caret-down"></i>
+                </button>
+                <div class="dropdown-about">
+                  <a href="About_Us_WIL.html">About Us</a>
+                  <a href="./Testimonial.html">Our Testimonials</a>
+                </div>
+                </div> 
+        
+          <!-- <a href="webpage_Contactus_help_assignment.html">About Us</a> --> 
+          <a href="./WIL_Grid.html">Jobs</a>
+        
+        
+          <a href="javascript:void(0);" class="icon" onclick="mobilenav()">
+            <i class="fa fa-bars"></i>
+          </a>
+          
+        </div>
+        
+        <div class="mtopnav">
+          
+          <div id="myLinks">
+          <a href="MOODLEJOB_Employer_Login.html">Employers Login</a>
+          
+          <div class="dropdown">
+          <!-- <button class="dropbtn" onclick="myFunction()">Categories
+            <i class="fa fa-caret-down"></i>
+          </button>
+          <div class="dropdown-content" id="myDropdown">
+            <a href="#">Electronics</a>
+            <a href="#">Laptop/Mobile</a>
+            <a href="#">Women's Fashion</a>
+            <a href="#">Men's Fashion</a>
+            <a href="#">Entertainments</a>
+          </div> -->
+          </div> 
+          <a href="webpage_login_signup_ assignment.html">Current Student Login</a>
+          <a href="webpage_Contactus_help_assignment.html">Contact Us/Help</a>
+          <a href="About_Us_WIL.html">About Us</a>
+          <a href="./Testimonial.html">Our Testimonials</a>
+          </div>
+        </div>
+
+
+
+
+
+    <!-- Main Content Section -->
+    <div class="container-fluid border border-dark mt-2 p-0">
+        <!-- Background WIL Picture with text Section -->
+        <section id="section-hero" class="text-center text-white d-flex justify-content-start align-items-center">
+			<div class="container-fluid ms-5 d-flex flex-column justify-content-start align-items-start text-left">
+                    <h2 class="display-4 text-start" id="titleBackground">WIL Opportunities</h2>
+                    <p id="titleBackgroundParagraph" class="w-25 p-2 mt-3 text-start d-flex align-items-start justify-content-start">Explore your job possibilities as a Murdoch student.</p>
+			</div> 
+           
+            <div class="container-fluid position-absolute bottom-0 end-0 d-flex justify-content-end align-items-end" id="buttonSearchHolder">
+                <div class="search-container">
+                    <form action="/search" method="get">
+                      <input class="search expandright" id="searchright" type="search" name="q" placeholder="Search">
+                      <label class="button searchbutton" for="searchright"><span class="mglass">&#9906;</span></label>
+                    </form>
+                  </div>
+            </div>
+		</section>
+
+        <!-- Color Color Red Section -->
+        <div class="container-fluid" id="colorBackground">
+            <p class="text-danger">..</p>
+        </div>
+
+
+        <!-- Breadcrumb Section-->
+        <div class="container mt-4">
+            <nav style="--bs-breadcrumb-divider: '>';" aria-label="Breadcrumb" class="pt-2">
+                <ol class="breadcrumb">
+                  <li class="breadcrumb-item "><a href="#" class="text-black text-decoration-none">Home</a></li>
+                  <li class="breadcrumb-item "><a href="#" class="text-danger text-decoration-none">WIL Opportunities</a></li>
+                </ol>
+              </nav>
+        </div>  
+
+        <!-- Filter By Section -->
+
+      
+        <div class="container">
+            <div class="d-flex flex-column flex-lg-row align-items-start justify-content-between w-100" id="filterByText">
+
+                <div class="container d-flex flex-column">
+                    <span>Filter By: </span>
+                    <div class="container d-flex flex-row">
+                        <div class="mt-lg-4 ms-lg-1 me-2" id="greenBox"></div>
+                        <span class="mt-lg-3">Work Placements</span>
+                    </div>
+                    
+                    <div class="container d-flex flex-row">
+                        <div class="mt-lg-4 ms-lg-1 me-2" id="yellowBox"></div>
+                        <span class="mt-lg-3">Industry Projects</span>
+                    </div>
+                    
+                    <div class="container d-flex flex-row">
+                        <div class="mt-lg-4 ms-lg-1 me-2" id="navyBox"></div>
+                        <span class="mt-lg-3">Work Simulations</span>
+                    </div>
+                </div>
+        
+
+                    <div class="container d-flex justify-content-center align-items-start">
+                        <!-- Icons Section -->
+                        <section class="d-flex flex-row mt-sm-3 ps-lg-5 ms-lg-5 justify-content-center align-items-start">
+                            <img src="./ArtAssets//Icons/List_View.png" alt="Image thumbnail" id="listView" class="img-thumbnail">
+                            <img src="./ArtAssets/Icons/Grid_View.png" alt="Image thumbnail" id="gridView" class="img-thumbnail">
+                        </section>
+                    </div>
+
+               
+            </div>
+        </div>
+        <!-- Advanced Search Title -->
+        <div class="container mt-sm-5">
+            <h4 class="text-decoration-underline">ADVANCED SEARCH</h4>    
+        </div>
+
+        <!-- List View -->
+        <div class="vw-sm-50 vw-100 container mt-5">
+
+            <!-- List#1 -->
+            <div class="container d-flex flex-lg-row flex-column justify-content-around align-items-around ">
+             
+                   <!-- Item#1 -->
+                   <div class=" d-flex flex-column flex-lg-row card w-100 p-3 me-lg-5 mb-sm-5 mt-1 mt-lg-0 border border-5 border-start-0 border-end-0 border-bottom-0 border-success card-container" id="cardContainer">
+                    <img src="./ArtAssets/Rectangle 62.jpg" alt="Card image in the top" class="w-50 h-75 card-img-top ms-2 mt-5 border border-5 border-dark" id="companyPhoto">
+                    <div class="card-body">
+                        <!-- Job Description -->
+                        <div class="container-fluid d-flex flex-row">
+                            <h4 class="card-title w-100 mt-2">Data Engineer (Power BI / SQL)</h4>
+                            <p class="card-text w-100 ms-2 p-1">OPTIMUM SOLUTIONS (SINGAPORE) PTE LTD Singapore</p>
+                            <img src="./ArtAssets/Icons/Save_Icon.png" class="ms-5 ps-2" id="saveIconList">
+                        </div>
+                        
+                        <div class="container">
+                            <p>The Government Technology Agency (GovTech) aims to transform the delivery of Government digital services by taking an "outside-in" view, putting citizens and businesses at the heart of everything we do. Roles and Responsibilities: Collaborate with business and Technology users to</p>
+                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Neque, rem?</p>
+                            <ul>
+                                <li>Lorem, ipsum. Lorem Lorem</li>
+                                <li>Lorem, ipsum. Lorem Lorem</li>
+                                <li>Lorem, ipsum. Lorem Lorem</li>
+                            </ul>
+                        </div>
+                
+                      <!-- Icons for Job Description -->
+                      <div class="container ms-5 p-1 ps-5 mt-4">
+                        <div class="container w-75 d-flex flex-row justify-content-center align-items-center">
+                            <figure class="figure d-flex flex-row justify-content-center align-items-center ms-3">
+                                <img src="./ArtAssets/Icons/Post_Timing.png"  id="timePosting">
+                                <figcaption>&nbsp; 1 Month Ago</figcaption>
+                            </figure>
+                            <figure class="figure d-flex flex-row justify-content-center align-items-center ">
+                                <img src="./ArtAssets/Icons/Job_Type.png"  id="timePosting">
+                                <figcaption>&nbsp; Full Time</figcaption>
+                            </figure>
+                            <figure class="figure d-flex flex-row justify-content-center align-items-center ">
+                                <img src="./ArtAssets/Icons/Money_Icon.png"  id="timePosting">
+                                <figcaption> 600-1K / Month</figcaption>
+                            </figure>
+                            <figure class="figure d-flex flex-row justify-content-center align-items-center ">
+                                <img src="./ArtAssets/Icons/Globe_Icon.png"  id="timePosting">
+                                <figcaption> Remote</figcaption>
+                            </figure>
+                        </div>
+                      </div>
+
+                    </div>                    
+                </div>
+
+         
+
+
+            </div>
+
+            <!-- List#2 -->
+            <div class="container d-flex flex-lg-row flex-column justify-content-around align-items-around ">
+             
+                <!-- Item#1 -->
+                <div class=" d-flex flex-lg-row flex-column card w-100 p-3 me-lg-5 mb-sm-5 mt-1 mt-lg-0 border border-5 border-start-0 border-end-0 border-bottom-0 border-warning card-container" id="cardContainer">
+                 <img src="./ArtAssets/Rectangle 62.jpg" alt="Card image in the top" class="w-50 h-75 card-img-top ms-2 mt-5 border border-5 border-dark" id="companyPhoto">
+                 <div class="card-body">
+                     <!-- Job Description -->
+                     <div class="container-fluid d-flex flex-row">
+                         <h4 class="card-title w-100 mt-2">Data Engineer (Power BI / SQL)</h4>
+                         <p class="card-text w-100 ms-2 p-1">OPTIMUM SOLUTIONS (SINGAPORE) PTE LTD Singapore</p>
+                         <img src="./ArtAssets/Icons/Save_Icon.png" class="ms-5 ps-2" id="saveIconList">
+                     </div>
+                     
+                     <div class="container">
+                         <p>The Government Technology Agency (GovTech) aims to transform the delivery of Government digital services by taking an "outside-in" view, putting citizens and businesses at the heart of everything we do. Roles and Responsibilities: Collaborate with business and Technology users to</p>
+                         <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Neque, rem?</p>
+                         <ul>
+                             <li>Lorem, ipsum. Lorem Lorem</li>
+                             <li>Lorem, ipsum. Lorem Lorem</li>
+                             <li>Lorem, ipsum. Lorem Lorem</li>
+                         </ul>
+                     </div>
+             
+                   <!-- Icons for Job Description -->
+                   <div class="container ms-5 p-1 ps-5 mt-4">
+                     <div class="container w-75 d-flex flex-row justify-content-center align-items-center">
+                         <figure class="figure d-flex flex-row justify-content-center align-items-center ms-3">
+                             <img src="./ArtAssets/Icons/Post_Timing.png"  id="timePosting">
+                             <figcaption>&nbsp; 1 Month Ago</figcaption>
+                         </figure>
+                         <figure class="figure d-flex flex-row justify-content-center align-items-center ">
+                             <img src="./ArtAssets/Icons/Job_Type.png"  id="timePosting">
+                             <figcaption>&nbsp; Full Time</figcaption>
+                         </figure>
+                         <figure class="figure d-flex flex-row justify-content-center align-items-center ">
+                             <img src="./ArtAssets/Icons/Money_Icon.png"  id="timePosting">
+                             <figcaption> 600-1K / Month</figcaption>
+                         </figure>
+                         <figure class="figure d-flex flex-row justify-content-center align-items-center ">
+                             <img src="./ArtAssets/Icons/Globe_Icon.png"  id="timePosting">
+                             <figcaption> Remote</figcaption>
+                         </figure>
+                     </div>
+                   </div>
+
+                 </div>                    
+             </div>
+
+      
+
+
+            </div>
+
+
+            <!-- List#3 -->
+            <div class="container d-flex flex-lg-row flex-column justify-content-around align-items-around ">
+             
+                <!-- Item#1 -->
+                <div class=" d-flex flex-lg-row flex-column card w-100 p-3 me-lg-5 mb-sm-5 mt-1 mt-lg-0 border border-5 border-start-0 border-end-0 border-bottom-0 border-navy card-container" id="cardContainer">
+                 <img src="./ArtAssets/Rectangle 62.jpg" alt="Card image in the top" class="w-50 h-75 card-img-top ms-2 mt-5 border border-5 border-dark" id="companyPhoto">
+                 <div class="card-body">
+                     <!-- Job Description -->
+                     <div class="container-fluid d-flex flex-row">
+                         <h4 class="card-title w-100 mt-2">Data Engineer (Power BI / SQL)</h4>
+                         <p class="card-text w-100 ms-2 p-1">OPTIMUM SOLUTIONS (SINGAPORE) PTE LTD Singapore</p>
+                         <img src="./ArtAssets/Icons/Save_Icon.png" class="ms-5 ps-2" id="saveIconList">
+                     </div>
+                     
+                     <div class="container">
+                         <p>The Government Technology Agency (GovTech) aims to transform the delivery of Government digital services by taking an "outside-in" view, putting citizens and businesses at the heart of everything we do. Roles and Responsibilities: Collaborate with business and Technology users to</p>
+                         <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Neque, rem?</p>
+                         <ul>
+                             <li>Lorem, ipsum. Lorem Lorem</li>
+                             <li>Lorem, ipsum. Lorem Lorem</li>
+                             <li>Lorem, ipsum. Lorem Lorem</li>
+                         </ul>
+                     </div>
+             
+                   <!-- Icons for Job Description -->
+                   <div class="container ms-5 p-1 ps-5 mt-4">
+                     <div class="container w-75 d-flex flex-row justify-content-center align-items-center">
+                         <figure class="figure d-flex flex-row justify-content-center align-items-center ms-3">
+                             <img src="./ArtAssets/Icons/Post_Timing.png"  id="timePosting">
+                             <figcaption>&nbsp; 1 Month Ago</figcaption>
+                         </figure>
+                         <figure class="figure d-flex flex-row justify-content-center align-items-center ">
+                             <img src="./ArtAssets/Icons/Job_Type.png"  id="timePosting">
+                             <figcaption>&nbsp; Full Time</figcaption>
+                         </figure>
+                         <figure class="figure d-flex flex-row justify-content-center align-items-center ">
+                             <img src="./ArtAssets/Icons/Money_Icon.png"  id="timePosting">
+                             <figcaption> 600-1K / Month</figcaption>
+                         </figure>
+                         <figure class="figure d-flex flex-row justify-content-center align-items-center ">
+                             <img src="./ArtAssets/Icons/Globe_Icon.png"  id="timePosting">
+                             <figcaption> Remote</figcaption>
+                         </figure>
+                     </div>
+                   </div>
+
+                 </div>                    
+             </div>
+
+      
+
+
+            </div>
+
+            <!-- List#4 -->
+            <div class="container d-flex flex-lg-row flex-column justify-content-around align-items-around ">
+             
+                <!-- Item#1 -->
+                <div class=" d-flex flex-lg-row flex-column card w-100 p-3 me-lg-5 mb-sm-5 mt-1 mt-lg-0 border border-5 border-start-0 border-end-0 border-bottom-0 border-success card-container" id="cardContainer">
+                 <img src="./ArtAssets/Rectangle 62.jpg" alt="Card image in the top" class="w-50 h-75 card-img-top ms-2 mt-5 border border-5 border-dark" id="companyPhoto">
+                 <div class="card-body">
+                     <!-- Job Description -->
+                     <div class="container-fluid d-flex flex-row">
+                         <h4 class="card-title w-100 mt-2">Data Engineer (Power BI / SQL)</h4>
+                         <p class="card-text w-100 ms-2 p-1">OPTIMUM SOLUTIONS (SINGAPORE) PTE LTD Singapore</p>
+                         <img src="./ArtAssets/Icons/Save_Icon.png" class="ms-5 ps-2" id="saveIconList">
+                     </div>
+                     
+                     <div class="container">
+                         <p>The Government Technology Agency (GovTech) aims to transform the delivery of Government digital services by taking an "outside-in" view, putting citizens and businesses at the heart of everything we do. Roles and Responsibilities: Collaborate with business and Technology users to</p>
+                         <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Neque, rem?</p>
+                         <ul>
+                             <li>Lorem, ipsum. Lorem Lorem</li>
+                             <li>Lorem, ipsum. Lorem Lorem</li>
+                             <li>Lorem, ipsum. Lorem Lorem</li>
+                         </ul>
+                     </div>
+             
+                   <!-- Icons for Job Description -->
+                   <div class="container ms-5 p-1 ps-5 mt-4">
+                     <div class="container w-75 d-flex flex-row justify-content-center align-items-center">
+                         <figure class="figure d-flex flex-row justify-content-center align-items-center ms-3">
+                             <img src="./ArtAssets/Icons/Post_Timing.png"  id="timePosting">
+                             <figcaption>&nbsp; 1 Month Ago</figcaption>
+                         </figure>
+                         <figure class="figure d-flex flex-row justify-content-center align-items-center ">
+                             <img src="./ArtAssets/Icons/Job_Type.png"  id="timePosting">
+                             <figcaption>&nbsp; Full Time</figcaption>
+                         </figure>
+                         <figure class="figure d-flex flex-row justify-content-center align-items-center ">
+                             <img src="./ArtAssets/Icons/Money_Icon.png"  id="timePosting">
+                             <figcaption> 600-1K / Month</figcaption>
+                         </figure>
+                         <figure class="figure d-flex flex-row justify-content-center align-items-center ">
+                             <img src="./ArtAssets/Icons/Globe_Icon.png"  id="timePosting">
+                             <figcaption> Remote</figcaption>
+                         </figure>
+                     </div>
+                   </div>
+
+                 </div>                    
+             </div>
+
+      
+
+
+            </div>
+
+
+
+        <!-- Pagination -->
+        <div class="container mt-5 mt-lg-5">
+            <nav aria-label="Search results pages">
+                <ul class="text-decoration-none list-unstyled d-flex flex-row justify-content-center text-center" id="pageNumber">
+                    <li><a href="" class="text-decoration-none text-black mx-4 h2"><</a></li>
+                    <li><a href="" class="text-decoration-none text-black mx-3 py-2 rounded-3 px-3 border border-3 border-dark">1</a></li>
+                    <li><a href="" class="text-decoration-none text-black mx-3 py-2 rounded-3 px-3">2</a></li>
+                    <li><a href="" class="text-decoration-none text-black mx-3 py-2 rounded-3 px-3">3</a></li>
+                    <li><a href="" class="text-decoration-none text-black mx-3 py-2 rounded-3 px-3">4</a></li>
+                    <li><a href="" class="text-decoration-none text-black mx-3 py-2 rounded-3 px-3">5</a></li>
+                    <li><a href="" class="text-decoration-none text-black mx-4 h2">></a></li>
+                </ul>
+              </nav>
+        </div>
+
+
+
+        <!-- Show Result Page -->
+        <div class="container mt-5">
+            <nav aria-label="Search Result Page">
+                <ul class="text-decoration-none list-unstyled d-flex flex-row justify-content-center text-center" id="showResult">
+                    <li>Result Per Page</li>
+                    <li><a href="" class="text-decoration-none text-black mx-3 py-2 rounded-3 px-3 border border-3 border-dark">8</a></li>
+                    <li><a href="" class="text-decoration-none text-black mx-3 py-2 rounded-3 px-3">20</a></li>
+                    <li><a href="" class="text-decoration-none text-black mx-3 py-2 rounded-3 px-3">30</a></li>
+                </ul>
+            </nav>
+        </div>
+
+
+
+
+    </div>
+
+</body>
+</html>

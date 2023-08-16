@@ -1,0 +1,213 @@
+
+.adminMain{
+    
+    padding: 2%;
+    background-color: white;
+    overflow-y: scroll;
+    overflow-x: auto;
+   
+}
+
+
+
+.headerAdmin{
+   
+    border: 2px solid rgb(245, 245, 245);
+    border-radius: 18px;
+    background-color: rgb(245, 245, 245);
+    width:  100vw;
+    padding: 1% 1% 1% 2%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.headerAdmin h1{
+    font-family: MontserratBold;
+    letter-spacing: 1px;
+    line-height: 125%;
+}
+
+.degreeAdminContent{
+    width: 100vw;
+    margin-top: 2%;
+    padding: 1.5%;
+    background-color: rgb(240,240,240);
+    margin-bottom: 25%;
+}
+
+.table{
+    background-color: rgb(240,240,240);
+   
+}
+
+
+
+
+
+
+
+.adminMain .add-Btn{
+    border: none;
+    height: 45px;
+    width:  7%;
+    margin-top: 1%;
+    font-size: 20px;
+    background-color: rgb(32, 32, 32);
+    border-radius: 20px;
+    text-decoration: none;
+    color:white;
+}
+
+
+button:hover{
+    color: white;
+    transform: scale(1.025);
+    transition: all 0.5s;
+    background-color: none;
+}
+
+
+
+
+
+/*Add Degree*/
+.addDegreeBody{
+    overflow: scroll;
+    margin: 0%;
+    padding: 0%;
+}
+
+.headerText{
+    font-family: MontserratBold;
+}
+
+.addDegreeContent{
+    background-color: white;
+    padding:2% 0%;
+}
+
+.formAddDegree{
+    margin-bottom: 100%;
+    background-color: rgb(240,240,240);
+    padding: 15%;
+    margin-left: 5rem;
+    border-radius: 20px;
+    width: 250%;
+}
+
+.formAddDegree form{
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+}
+
+.formAddDegree form section label{
+    margin: 2% 0%;
+    font-family: Montserrat;
+}
+
+.formAddDegree form section{
+    display: flex;
+    flex-direction: column;
+
+}
+
+
+.formAddDegree form section input{
+    margin-left: 0%;
+    width: 50%;
+    height: 25px;
+}
+
+.formAddDegree form section textarea{
+    margin-left: 0%;
+    width: 50%;
+    height: 150px;
+    resize: none;
+}
+
+.formAddDegree form .addButtons{
+    margin: 2% 0%;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: left;
+}
+
+
+.addButtons .cancelBtnInput{
+    width: 15%;
+    font-size: 20px;
+    padding: 1%;
+    height: auto;
+    font-family: MontserratBold;
+    border: none;
+    background-color: black;
+    color: white;
+}
+
+
+.addButtons .addBtnInput{
+    margin-left: 2%;
+    width: 12%;
+    font-size: 20px;
+    padding: 1%;
+    height: auto;
+    font-family: MontserratBold;
+    border: none;
+    background-color: black;
+    color: white;
+}
+.addButtons .addBtnInput:hover,
+.addButtons .cancelBtnInput:hover{
+    transform: scale(1.025);
+    transition: all 0.5s;
+}
+
+/*Modal Degree*/
+
+.deleteForm section input,
+.updateForm section input{
+    width: 100%;
+}
+
+.deleteForm section,
+.updateForm section{
+    display: flex;
+    flex-direction: column;
+}
+
+.deleteForm section textarea,
+.updateForm section textarea{
+    width: 100%;
+    height: 150px;
+    resize: none;
+}
+
+
+.deleteInput{
+    display: none;
+}
+
+.deleteForm .warningLogo i{
+    font-size: 50px;
+    color: orangered;
+    margin-bottom: 1%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.deleteForm .warningText{
+    font-family: MontserratBold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.deleteForm .warningContent{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+

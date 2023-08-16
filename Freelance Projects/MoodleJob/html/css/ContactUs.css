@@ -1,0 +1,272 @@
+.content {
+    position: relative;
+    color: white;
+}
+
+.text-center {
+    position: absolute;
+    top: 65%;
+    left: 50%;
+    font-size: 48px;
+    transform: translate(-50%, -50%);
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.smolTitle {
+    margin-left: 20%;
+    width: 100%;
+    background-color: #353B41;
+    color: white;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 25px;
+    padding: 10px;
+    padding-left: 10%;
+    padding-right: 10%;
+    text-align: center;
+}
+
+.accordion li {
+    list-style: none;
+    width: 100%;
+    margin-left: -10%;
+    padding: 10px;
+}
+
+.accordion li .label {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.label::before {
+    content: '+';
+    margin-right: 10px;
+    font-size: 24px;
+    font-weight: 600;
+}
+
+input[type='radio'] {
+    display: none;
+}
+
+.accordion .content {
+    color: #555;
+    padding: 0 10px;
+    line-height: 26px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s, padding 0.5s;
+}
+
+.accordion input[type='radio']:checked+label+.content {
+    max-height: 400px;
+    padding: 10px 10px 20px;
+}
+
+.accordion input[type='radio']:checked+label::before {
+    content: '-';
+}
+
+/*.........................................................................................*/
+
+.accordion2 li {
+    list-style: none;
+    width: 100%;
+    margin-left: -10%;
+    padding: 10px;
+}
+
+.accordion2 li label {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.accordion2 .content2 {
+    color: #555;
+    padding: 0 10px;
+    line-height: 26px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s, padding 0.5s;
+}
+
+.accordion2 input[type='radio']:checked+label+.content2 {
+    max-height: 400px;
+    padding: 10px 10px 20px;
+}
+
+.accordion2 input[type='radio']:checked+label::before {
+    content: '-';
+}
+
+/*.........................................................................................*/
+
+.accordion3 li {
+    list-style: none;
+    width: 100%;
+    margin-left: -10%;
+    padding: 10px;
+}
+
+.accordion3 li label {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.accordion3 .content3 {
+    color: #555;
+    padding: 0 10px;
+    line-height: 26px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s, padding 0.5s;
+}
+
+.accordion3 input[type='radio']:checked+label+.content3 {
+    max-height: 400px;
+    padding: 10px 10px 20px;
+}
+
+.accordion3 input[type='radio']:checked+label::before {
+    content: '-';
+}
+
+/*.........................................................................................*/
+
+.accordion4 li {
+    list-style: none;
+    width: 100%;
+    margin-left: -10%;
+    padding: 10px;
+}
+
+.accordion4 li label {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.accordion4 .content4 {
+    color: #555;
+    padding: 0 10px;
+    line-height: 26px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s, padding 0.5s;
+}
+
+.accordion4 input[type='radio']:checked+label+.content4 {
+    max-height: 400px;
+    padding: 10px 10px 20px;
+}
+
+.accordion4 input[type='radio']:checked+label::before {
+    content: '-';
+}
+
+.text {
+    text-align: center;
+    font-size: 48px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+/*.........................................................................................*/
+
+.accordion5 li {
+    list-style: none;
+    width: 100%;
+    padding: 10px;
+    float: left;
+    margin-left: 9.3%;
+}
+
+.accordion5 li label {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.accordion5 .content5 {
+    color: #555;
+    padding: 0 10px;
+    line-height: 26px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s, padding 0.5s;
+}
+
+.accordion5 input[type='radio']:checked+label+.content5 {
+    max-height: 400px;
+    padding: 10px 10px 20px;
+}
+
+.accordion5 input[type='radio']:checked+label::before {
+    content: '-';
+}
+
+.accordion6 li {
+    list-style: none;
+    width: 100%;
+    padding: 10px;
+    float: right;
+    margin-right: 50%;
+}
+
+.accordion6 li label {
+    display: flex;
+    align-items: center;
+    font-size: 18px;
+}
+
+.smallscreen {
+    display: flex;
+}
+
+.smallscreen2 {
+    display: flex;
+}
+
+@media only screen and (max-width: 768px) {
+    .smallscreen {
+        display: grid;
+        margin-left: 10%;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .smallscreen2 {
+        display: grid;
+    
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .accordion6 {
+        display: grid;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .text {
+        font-size: 30px;
+        
+    }
+}
+

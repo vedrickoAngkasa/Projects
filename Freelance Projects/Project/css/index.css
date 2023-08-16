@@ -1,0 +1,623 @@
+
+/*Font Import Files*/
+@font-face{
+    font-family: Montserrat;
+    src: url("Fonts/Montserrat-VariableFont_wght.ttf");
+}
+
+@font-face{
+    font-family: MontserratBold;
+    src: url("Fonts/static/Montserrat-Bold.ttf");
+}
+
+
+body{
+    margin: 0px;
+    padding: 0px;
+    overflow: auto;
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+
+ul{
+    list-style: none;    
+}
+
+
+
+
+
+
+/*Style for the navigation List*/
+/*Style for the Main Content of the Page*/
+
+main{
+    background-color: rgb(249, 249, 249);
+}
+
+.navContent{
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.headerLogo{
+    margin: 0px 5% 0px 0%;
+    padding: 0.5%;
+
+}
+
+
+.headerLogo figure img{
+ 
+    width: 200px;
+    height: 100%;
+    display: flex;
+    justify-content: left;
+}
+
+.navList{
+    padding: 0.5% 5%;
+    margin: 0.5% 0% 0.5% 22%;
+    width: 50%;
+}
+
+.navList ul{
+
+    font-size: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.navList li{
+
+    margin: 2% 0%;
+    padding: 1% 1%;
+}
+
+.navList li a{
+    letter-spacing: 2px;
+    font-family: montserratBold;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}
+
+
+.navList li a:hover{
+    color: orange;
+    transition: all 0.75s;
+}
+
+
+.bannerContent{
+    background-image: linear-gradient( 
+        rgba(0, 0, 0, 0.5), rgba(10, 11, 63, 0.5) ),
+        url("Images/background.jpg");
+    background-size:cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(229,229,229);
+    margin: 0px;
+    padding: 1%;
+}
+
+.banner{
+    text-align: left;
+}
+
+.banner aside{
+    margin: 1% 5% 0% 5%;
+    padding: 2% 1% 0.5% 1%;
+    width: 50%;
+    height: 25%;
+    font-family: MontserratBold;
+    font-size: 90px;
+    font-weight: 800;
+    color: rgb(235, 235, 235);
+}
+
+.banner aside .txt1{
+    font-family: MontserratBold;
+    font-size: 100px;
+    font-weight: 1000;
+    margin: 10px 0px 0px 0px;
+    padding: 10px 0px;
+    color: rgb(0, 15, 155);
+    line-height: 95%;
+}
+
+.banner aside .txt2{
+    line-height: 95%;
+}
+
+.banner p{
+    text-align: left;
+    width: 45%;
+    margin: 1% 6% 2.5%;
+    padding: 0% 1%;
+    font-size: 20px;
+    font-weight: 525;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(236, 236, 236);
+}
+
+/*Undergraduate Content Styling*/
+
+.undergraduateSection{
+
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(255, 255, 255);
+    padding-bottom: 4%;
+}
+
+.undergraduateHeader{
+    margin: 2% 0% 1%  5.5%  ;
+    padding: 2% 2% 1% 2%;    
+}
+
+.undergraduateHeader h1{
+    font-family: MontserratBold;
+    letter-spacing: 1px;
+ 
+}
+
+.undergraduateHeader p{
+    font-family: Montserrat;
+    letter-spacing: 1px;
+    padding: 1.5% 0%;
+}
+
+.undergraduateContent{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    
+}
+
+.eventIGContent,
+.studentEventContent,
+.welcomeMsgContent{
+   
+    padding: 7% 2% 2% 2%;
+    background-color: rgb(250,250,250);
+}
+
+
+
+.eventIGContent span,
+.studentEventContent span,
+.welcomeMsgContent span{
+    font-family: MontserratBold;
+    line-height: 150%;
+    padding: 2%;
+    
+}
+
+.eventIGLink,
+.studentEventLink,
+.welcomeMsgLink{
+    padding: 3.5%;
+    background-color: rgb(236, 236, 236);
+    
+}
+
+.eventIGLink a,
+.studentEventLink a,
+.welcomeMsgLink a{
+    font-family: MontserratBold;
+    letter-spacing: 1px;
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+}
+
+.eventIGContent p,
+.studentEventContent p,
+.welcomeMsgContent p{
+    margin: 1%;
+    padding: 1%;
+    font-family: Montserrat;
+    letter-spacing: 1px;
+    line-height: 125%;
+}
+
+
+.eventIG,
+.studentEvent,
+.welcomeMsg{
+    width: 25%;
+    margin: 1% 2.3% 1% 2.5%;
+    border: 0.25px solid rgb(230, 230, 230);
+}
+
+
+
+.eventIGPhoto figure img,
+.studentEventPhoto figure img,
+.welcomeMsgPhoto figure img{
+    width: 100%;
+    height: auto;
+    
+}
+
+
+
+
+
+
+
+
+
+/*About Us Styling*/
+
+.aboutContent{
+    margin: 2% 6.25%;
+    padding: 1%;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-around;
+}
+
+.imageAbout img{
+    width: 630px;
+    height: auto;
+}
+.imageAbout{
+    margin: 3% 0%  ;
+}
+
+.descAbout{
+    margin: 2% 0%;
+   
+}
+
+.descAbout aside{
+    margin: 1% 1.5%;
+    line-height: 100%;
+}
+
+.descAbout h1{
+    font-family: MontserratBold;
+    margin: 1%;
+    line-height: 125%;
+    letter-spacing: 2px;
+}
+
+.descAbout p{
+    margin: 4% 1% ;
+    line-height: 125%;
+    width: 85%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+
+/*Testimonials Styling*/
+.testimonialsContent{
+    
+    background-color: rgb(235, 235, 235);
+    padding: 0.25%;
+}
+
+.testimonialsHeader{
+    margin: 1% 5.5%;
+    padding: 1%;
+}
+
+.testimonialsHeader aside{
+    margin: 1% 1% 0% 1%;
+    font-family: Montserrat;
+}
+
+
+.testimonialsHeader h1{
+    margin: 0.5% 1%;
+    color: rgb(46, 46, 46);
+    font-family: MontserratBold;
+}
+
+.testimonialsHeader span{
+    color: rgb(0, 19, 187);
+
+}
+
+.testimonialsContainer{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+
+
+.container .profilePic img{
+   
+    width: 100px;
+    height: auto;
+    border-radius: 50%;
+}
+
+.container{
+    background-color: white;
+    margin: 1% 2.3% 1% 2.85%;
+    padding: 1%;
+    width: 25%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container figcaption{
+    margin: 0.75%;
+    padding: 0.5%;
+    width: 100%  ;
+    text-align: center;
+    font-family: MontserratBold;
+}
+
+.container .enrollment{
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: italic;
+    padding: 0.5%;
+    margin: 0.75%;
+}
+
+.container .rating{
+    padding: 0.5%;
+    margin: 0.75%; 
+}
+
+.container .rating i{
+    color:rgb(253, 253, 45);
+   
+}
+
+.container .descEnrollment{
+    line-height: 125%;
+    padding: 0.75%;
+    margin: 0.75%;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: italic;
+    font-size: 13.5px;
+}
+
+.infoDetails{
+    display: flex;
+    justify-content: center;
+    margin: 0px;
+    padding: 0px;
+}
+
+.email{
+    color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: 0%;
+    padding: 3%;
+    width: 34%;
+    background-color: #262626;
+}
+.phoneNumber{
+    color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: 0%;
+    padding: 3%;
+    width: 34%;
+    background-color: #1B1B1B;
+}
+
+.postelCode{
+    color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: 0%;
+    padding: 3%;
+    width: 34%;
+    background-color: #000000;
+}
+
+.email i,
+.phoneNumber i,
+.postelCode i{
+    font-size: 70px;
+}
+
+.email section,
+.phoneNumber section,
+.postelCode section{
+    margin: 1.5%;
+    width: 50%;
+}
+
+.email h2,
+.postelCode h2{
+    line-height: 140%;
+    font-family: MontserratBold;
+    letter-spacing: 1px;
+    width: 100%;
+}
+
+.phoneNumber h2{
+    line-height: 140%;
+    font-family: MontserratBold;
+    letter-spacing: 1px;
+    width: 115%;
+}
+
+.email p,
+.phoneNumber p,
+.postelCode p{
+   
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+}
+
+/*Footer Styling*/
+
+footer{
+    background-color: rgb(33, 35, 48);
+    display: flex;
+    flex-direction: column;
+}
+
+.upperFooter{
+    display: flex;
+    flex-direction: row;
+}
+
+.descFooter{
+    color: rgb(224, 224, 224);
+    display: flex;
+    flex-direction: column;
+    width: 33%;
+    margin-top: 1%;
+    margin-left:2.5% ;
+}
+
+.footerLogo img{
+    margin: 0.50%;
+    padding: 5% 1% 1% 15%;
+    width: 300px;
+    height: auto;
+}
+
+.footerLogo figcaption{
+    margin: 0.5% 4%;
+    padding: 3% 1% 1% 15%;
+    width: 89%;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    letter-spacing: 1px;
+}
+
+.linksFooter{
+ 
+    display: flex;
+    flex-direction: column;
+    width: 28%;
+    margin-top: 2%;
+    margin-left: 3%;
+}
+
+.linksFooter h2{
+    color:rgb(224, 224, 224);
+    font-family: MontserratBold;
+    letter-spacing: 1px;
+    margin: 2%;
+    padding: 3%;
+    width: 75%;
+}
+
+.linksFooter nav{
+    margin: 1.5%;
+    padding: 3%;
+    width: 75%;
+}
+
+.linksFooter ul{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.linksFooter li{
+    margin: 1%;
+    font-size: 13px;
+    padding: 1%;
+    list-style: none;
+    color: white;
+}
+
+
+.linksFooter a{
+    color:white;
+    text-decoration: none;
+    font-family: MontserratBold;
+    letter-spacing: 1px;
+    text-align: center;
+}
+
+.linksFooter a:hover{
+    color: orange;
+    transition: all 0.75s;
+}
+
+.feedbackFooter{ 
+    margin-top: 1.5%;
+    display: flex;
+    flex-direction: column;
+    width: 36%;
+    margin-left: 2.5%;
+}
+
+.feedbackFooter h2{
+    color:rgb(224, 224, 224);
+    font-family: MontserratBold;
+    letter-spacing: 1px;
+    margin: 2% 2% 0% 2%;
+    padding: 3% 3% 0% 4%;
+    width: 100%;
+}
+
+.feedbackFooter form{
+    display: flex;
+    flex-direction: column;
+    margin: 0% 2% 2% 2%;
+    padding: 3%;
+    justify-content: space-between;
+}
+
+.feedbackFooter label{
+    color:rgb(224, 224, 224);
+    font-family: MontserratBold;
+    margin: 2%;
+    padding: 0%;
+}
+
+.feedbackFooter input{
+    margin: 2%;
+    padding: 0%;
+    width: 50%;
+    height: auto;
+}
+
+.feedbackFooter textarea{
+    margin: 2%;
+    padding: 0%;
+    width: 90%;
+    height: 150px;
+}
+
+.feedbackFooter .submitBtn{
+    margin: 2% ;
+    padding: 0%;
+    width: 20%;
+    height: auto;
+}
+
+.lowerFooter{
+    background-color: rgb(43, 45, 58);
+    color: rgb(94, 97, 106);
+}
+
+.lowerFooter section{
+    text-align: center;
+    padding: 0.5%;
+    font-weight: bolder;
+    letter-spacing: 1px;
+    font-family: Arial, Helvetica, sans-serif;
+}

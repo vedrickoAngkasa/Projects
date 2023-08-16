@@ -1,0 +1,76 @@
+.welcomePageContainer{
+
+    display: flex;
+    flex-direction: column;
+
+}
+
+.welcomePageContentHeader{
+
+    margin: 3% 6.5% 1% 6.5%;
+    padding: 1%;
+}
+
+.welcomePageContentHeader h1{
+    font-family: MontserratBold;
+    letter-spacing: 1px;
+    line-height: 125%;
+
+}
+
+.chairmanProfile{
+    margin: 0% 3.5% 0% 4.75%;
+}
+
+.chairmanProfile figure span{
+    font-family: Montserrat;
+    margin-top:5%;
+    width: 250%;
+    letter-spacing: 1px;
+    font-size: 12px;
+    font-style: italic;
+}
+
+.chairmanProfile figure img{
+    width: 300px;
+    height: auto;
+}
+
+.chairmanProfile figcaption{
+    font-family: MontserratBold;
+    font-size: large;
+    letter-spacing: 1px;
+    line-height: 125%;
+    width: 200%;
+    font-size: 16px;
+    margin-top: 1.5%;
+    margin-bottom: 2%;
+}
+
+.welcomeMsgPageContent{
+    display: flex;
+    flex-direction: row;
+    margin: 0% 2% 3% 3%;
+    justify-content: space-around;
+
+    padding: 0%;
+}
+
+.descriptionContent{
+    margin: 0% 5%;
+}
+
+.descriptionContent .desc3,
+.descriptionContent .desc2,
+.descriptionContent .desc1{
+    margin: 0% 1% 1% 1%;
+    padding: 0% 1% 1% 1%;
+    width: 95%;
+    font-family: Montserrat;
+    letter-spacing: 1px;
+    line-height: 125%;
+    font-size: 17px;
+}
+
+
+
